@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+    >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <script src="https://kit.fontawesome.com/659d02510f.js" crossorigin="anonymous" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/search_result.css">
+        <link rel="stylesheet" href="css/division.css">
+        <link rel="stylesheet" href="css/bio.css">
+        <link rel="stylesheet" href="css/index2.css">
+        <link rel="stylesheet" href="css/component.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/welcome.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="nav_bar">
+            <div class="navbar_body">
+                <div class="nav_link">
+                    <div class="container mini_nav  ">
+                        <a href="">Leaderboard</a>
+                        <a href="">Birthdays</a>
+                        <a href="">My Services</a>
+                        <a href="">MTN ToolBox</a>
+                    </div>
+                </div>
+                <div class="mobile_header">
+                    <div class="mobile_logo">
+                        <a href="" class="pt-2 pe-3 mobile_logo">
+                            <img src="image/Vector.png" alt="">
+                        </a>
+                    </div>
+                    <div class="menu_bar" id="menu_bar" onclick="myFunction()">
+                        <i class="fa-solid fa-bars "></i>
+                    </div>
+                </div>
+                <header id="header">
+                    <div class="d-flex g-4  right-nav">
+                        <a href="" class="pt-2 pe-3 logo">
+                            <img src="image/Vector.png" alt="">
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="">Y’ello coms</a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#">Workflows</a>
+                            </li>
+                            <li class="popModal">
+                                <a href="#" id="popModal">Our People</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-nav">
+                        <div class="profile-icons">
+                            <div class="note-holder">
+                                <a href="profile.html">
+                                    <img src="image/user.png" alt="">
+                                </a>
+                                <div class="notification"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="note-holder">
+                                <a href="#">
+                                    <img src="image/bell.png" alt="">
+                                </a>
+                                <div class="notification"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cancel" onclick="closeup()">
+                        <img src="image/x.png" alt="">
+                    </div>
+                </header>
+            </div>
+        </section>
+        <section class="departmental-selection">
+            <div class="departmental-selction-container ">
+                <div class="row departmental-selction-row">
+                    <div class="col-3">
+                        <div class="navigation-container">
+                            <div class="navs-tabs activate" onclick="showThistabs(this,'wholeTab-1')">
+                                <div class="flex_item">  Risk and Compliance</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-2')">
+                                <div class="flex_item">       Corporate Services</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-3')">
+                                <div class="flex_item">       Customer Services</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-4')">
+                                <div class="flex_item">         Enterprise Business</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-5')">
+                                <div class="flex_item"> Finance</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-6')">
+                                <div class="flex_item">   Human Resources</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-7')">
+                                <div class="flex_item">     Technology</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-8')">
+                                <div class="flex_item">    Marketing</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="navigation-department-container  showThis" id="wholeTab-1">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-2">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 2
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-3">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-4">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-5">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-6">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-7">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 7
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-8">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 8
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="departmental-leader-profile uploaded" id="Info-tab-1">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga1.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-2">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga2.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-3">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga3.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-4">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga4.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-5">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga5.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-6">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga6.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-7">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga7.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-8">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga8.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="close">
+                <img src="image/x.png" alt="">
+            </div>
+        </section>
+        <section class="welcome_section">
+            <div class="container paddingtop">
+                <section class="tag_section">
+                    <div class="container_tag">
+                        <div class="con tag1">
+                            <a href="" tag_link>Home</a>
+                            <i class="fa-solid fa-chevron-right ps-3"></i>
+                        </div>
+                        <div class="con tag2">
+                            <a href="" tag_link>Our People</a>
+                            <i class="fa-solid fa-chevron-right ps-3"></i>
+                        </div>
+                        <div class="con tab3">
+                            <a href="" tag_link>Division 2.5</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="welcom_bacground_image">
+                    <div class="welcome_background_image_container">
+                        <img src="image/humans banner.png" alt="" class="img-fluid">
+                        <div class="welcome_head_text">
+                            <h2>Welcome to Division 1</h2>
+                        </div>
+                    </div>
+                </section>
+                <section class="about_division">
+                    <div class="about_division_container">
+                        <div class="about_division_header">
+                            <h3>About Division</h3>
+                        </div>
+                        <div class="about_division_body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, mollitia ex libero quisquam, eligendi sed culpa reiciendis perspiciatis commodi nemo nulla aliquid error iure explicabo iusto quidem dolores vero voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat blanditiis provident quasi sit quae expedita veritatis tenetur perferendis! Nobis id quas doloremque, velit veniam hic maiores culpa expedita perferendis ab itaque assumenda molestias, quaerat autem ex ipsam officia blanditiis.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="bio_info_section">
+                    <div class="bio-container">
+                        <div class="row information-row">
+                            <div class="col-lg-6 col-12">
+                                <section class="division_header bio_division_header row pt-5">
+                                    <div class="header_division_image col-lg-3 col-sm-5 col-12 text-center">
+                                        <img src="image/ga2.png" alt="">
+                                    </div>
+                                    <div class="head_name bio-head_name col-lg-8 col-sm-6 col-12">
+                                        <div class="name pb-3">
+                                            <h2>Michael Knight</h2>
+                                        </div>
+                                        <div class="divsion-status pb-4">Division Head</div>
+                                        <div class="divsion-btn pb-4">
+                                            <a href="">Follow on Yammer</a>
+                                            <a href="">More</a>
+                                        </div>
+                                        <div class="division-social pb-4">
+                                            <div class="linked-social">
+                                                <a href="" class="pe-3">
+                                                    <i class="fa-brands fa-square-twitter"></i>
+                                                </a>
+                                                <a href="">
+                                                    <i class="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </div>
+                                            <div class="dowload-image">
+                                                <a href="" class="pe-3">
+                                                    <i class="fa-solid fa-image"></i>
+                                                </a>
+                                                <a href="" class="download-img">Download Image</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <section class="bio_section">
+                                    <div class="bio_container">
+                                        <div class="bio_row row">
+                                            <div class="col-sm-6 col-12 pb-4">
+                                                <div class="bio_name">
+                                                    <h3>Bio</h3>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-12">
+                                                <div class="bio_text">
+                                                    <p>
+                                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served as the MTN Group’s Chief Financial Officer since April 2017. Prior to joining MTN, Ralph served as the Chief Executive Officer for Old Mutual Emerging Markets,
+                                                    </p>
+                                                    <div class="view-bio">
+                                                        <a href="#" class="view_bio">View Bio</a>
+                                                        <i class="fa-solid fa-chevron-right ps-3"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="departmental_section">
+                    <div class="department_container">
+                        <div class="department_header">
+                            <h1> Department</h1>
+                        </div>
+                        <div class="departmental_photos">
+                            <div class="departmental_division_image ">
+                                <img src="image/pic4.png" alt="">
+                                <div class="deparmental_info">
+                                    <div class="deparmental_name ">
+                                        <h5>Theodore T.C. Calvin</h5>
+                                    </div>
+                                    <div class="departmental_status ">
+                                        <p>Department Head</p>
+                                    </div>
+                                    <div class="departmental_link ">
+                                        <a href="">GO to Department</a>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="departmental_division_image ">
+                                <img src="image/pic3.png" alt="">
+                                <div class="deparmental_info">
+                                    <div class="deparmental_name ">
+                                        <h5>Theodore T.C. Calvin</h5>
+                                    </div>
+                                    <div class="departmental_status ">
+                                        <p>Department Head</p>
+                                    </div>
+                                    <div class="departmental_link ">
+                                        <a href="">GO to Department</a>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="departmental_division_image ">
+                                <img src="image/pic2.png" alt="">
+                                <div class="deparmental_info">
+                                    <div class="deparmental_name ">
+                                        <h5>Mcebisi Jonas</h5>
+                                    </div>
+                                    <div class="departmental_status ">
+                                        <p>Department Head</p>
+                                    </div>
+                                    <div class="departmental_link ">
+                                        <a href="">GO to Department</a>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="departmental_division_image ">
+                                <img src="image/pic.png" alt="">
+                                <div class="deparmental_info">
+                                    <div class="deparmental_name ">
+                                        <h5>Capt. Trunk</h5>
+                                    </div>
+                                    <div class="departmental_status ">
+                                        <p>Department Head</p>
+                                    </div>
+                                    <div class="departmental_link ">
+                                        <a href="">GO to Department</a>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="calender_section">
+                    <div class="event_container">
+                        <div class="row event-row">
+                            <div class="col-lg-6 col-12">
+                                <div class="row">
+                                    <div class="col-11 ">
+                                        <div class="warpper">
+                                            <div class="calender_logo pb-0 p-5">
+                                                <i class="fa-solid fa-calendar pe-3"></i>
+                                                Calender
+                                            </div>
+                                            <header>
+                                                <p class="current-date"></p>
+                                                <div class="icons">
+                                                    <i class="fa-solid fa-chevron-left  ps-4" id="prev"></i>
+                                                    <i class="fa-solid fa-chevron-right  pe-5" id="next"></i>
+                                                </div>
+                                            </header>
+                                            <div class="calender">
+                                                <ul class="weeks">
+                                                    <li>Sun</li>
+                                                    <li>Mon</li>
+                                                    <li>Tues</li>
+                                                    <li>Wed</li>
+                                                    <li>Thurs</li>
+                                                    <li>Fri</li>
+                                                    <li>Sat</li>
+                                                </ul>
+                                                <ul class="days"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-11 my-3">
+                                        <div class="whole-schedules">
+                                            <div class="schedule_logo ">
+                                                <i class="fa-solid fa-calendar pe-3"></i>
+                                                Schedules
+                                            </div>
+                                            <div class="schedules">
+                                                <div class="all-schedule">
+                                                    <div class="schedule-date">
+                                                        <div class="sched-day">Monday,</div>
+                                                        <div class="sched-date">
+                                                            2nd
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-box pt-3">
+                                                        <div class="row">
+                                                            <div class="col-sm-2 col-12 schedule-timming">
+                                                                <div class="scheduletime">
+                                                                    8:30pm
+                                                                </div>
+                                                                <div class="schedulemins">
+                                                                    45min
+                                                                </div>
+                                                            </div>
+                                                            <dv class="col-sm-10 col-12 schedule-timming ">
+                                                                <div class="schedule-title">Re-Innovation of Applications</div>
+                                                                <div class="shedule-link">
+                                                                    <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                                </div>
+                                                            </dv>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-box pt-3">
+                                                        <div class="row">
+                                                            <div class="col-sm-2 col-12 schedule-timming">
+                                                                <div class="scheduletime">
+                                                                    8:30pm
+                                                                </div>
+                                                                <div class="schedulemins">
+                                                                    45min
+                                                                </div>
+                                                            </div>
+                                                            <dv class="col-sm-10 col-12 schedule-timming ">
+                                                                <div class="schedule-title">Re-Innovation of Applications</div>
+                                                                <div class="shedule-link">
+                                                                    <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                                </div>
+                                                            </dv>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-box pt-3">
+                                                        <div class="row">
+                                                            <div class="col-sm-2 col-12 schedule-timming">
+                                                                <div class="scheduletime">
+                                                                    8:30pm
+                                                                </div>
+                                                                <div class="schedulemins">
+                                                                    45min
+                                                                </div>
+                                                            </div>
+                                                            <dv class="col-sm-10 col-12 schedule-timming ">
+                                                                <div class="schedule-title">Re-Innovation of Applications</div>
+                                                                <div class="shedule-link">
+                                                                    <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                                </div>
+                                                            </dv>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-box pt-3">
+                                                        <div class="row">
+                                                            <div class="col-sm-2 col-12 schedule-timming">
+                                                                <div class="scheduletime">
+                                                                    8:30pm
+                                                                </div>
+                                                                <div class="schedulemins">
+                                                                    45min
+                                                                </div>
+                                                            </div>
+                                                            <dv class="col-sm-10 col-12 schedule-timming ">
+                                                                <div class="schedule-title">Re-Innovation of Applications</div>
+                                                                <div class="shedule-link">
+                                                                    <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                                </div>
+                                                            </dv>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-date">
+                                                    <div class="sched-day">Wednesday,</div>
+                                                    <div class="sched-date">
+                                                        5th
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-box pt-3">
+                                                    <div class="row">
+                                                        <div class="col-sm-2 col-12 schedule-timming">
+                                                            <div class="scheduletime">
+                                                                8:30pm
+                                                            </div>
+                                                            <div class="schedulemins">
+                                                                45min
+                                                            </div>
+                                                        </div>
+                                                        <dv class="col-sm-10 col-12 schedule-timming ">
+                                                            <div class="schedule-title">Re-Innovation of Applications</div>
+                                                            <div class="shedule-link">
+                                                                <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                            </div>
+                                                        </dv>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-box pt-3">
+                                                    <div class="row">
+                                                        <div class="col-sm-2 col-12 schedule-timming">
+                                                            <div class="scheduletime">
+                                                                8:30pm
+                                                            </div>
+                                                            <div class="schedulemins">
+                                                                45min
+                                                            </div>
+                                                        </div>
+                                                        <dv class="col-sm-10 col-12 schedule-timming ">
+                                                            <div class="schedule-title">Re-Innovation of Applications</div>
+                                                            <div class="shedule-link">
+                                                                <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                            </div>
+                                                        </dv>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-box pt-3">
+                                                    <div class="row">
+                                                        <div class="col-sm-2 col-12 schedule-timming">
+                                                            <div class="scheduletime">
+                                                                8:30pm
+                                                            </div>
+                                                            <div class="schedulemins">
+                                                                45min
+                                                            </div>
+                                                        </div>
+                                                        <dv class="col-sm-10 col-12 schedule-timming ">
+                                                            <div class="schedule-title">Re-Innovation of Applications</div>
+                                                            <div class="shedule-link">
+                                                                <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                            </div>
+                                                        </dv>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-box pt-3">
+                                                    <div class="row">
+                                                        <div class="col-sm-2 col-12 schedule-timming">
+                                                            <div class="scheduletime">
+                                                                8:30pm
+                                                            </div>
+                                                            <div class="schedulemins">
+                                                                45min
+                                                            </div>
+                                                        </div>
+                                                        <dv class="col-sm-10 col-12 schedule-timming ">
+                                                            <div class="schedule-title">Re-Innovation of Applications</div>
+                                                            <div class="shedule-link">
+                                                                <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                            </div>
+                                                        </dv>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-date">
+                                                    <div class="sched-day">Friday,</div>
+                                                    <div class="sched-date">
+                                                        24th
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-box pt-3">
+                                                    <div class="row">
+                                                        <div class="col-sm-2 col-12 schedule-timming">
+                                                            <div class="scheduletime">
+                                                                8:30pm
+                                                            </div>
+                                                            <div class="schedulemins">
+                                                                45min
+                                                            </div>
+                                                        </div>
+                                                        <dv class="col-sm-10 col-12 schedule-timming ">
+                                                            <div class="schedule-title">Re-Innovation of Applications</div>
+                                                            <div class="shedule-link">
+                                                                <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                            </div>
+                                                        </dv>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-box pt-3">
+                                                    <div class="row">
+                                                        <div class="col-sm-2 col-12 schedule-timming">
+                                                            <div class="scheduletime">
+                                                                8:30pm
+                                                            </div>
+                                                            <div class="schedulemins">
+                                                                45min
+                                                            </div>
+                                                        </div>
+                                                        <dv class="col-sm-10 col-12 schedule-timming ">
+                                                            <div class="schedule-title">Re-Innovation of Applications</div>
+                                                            <div class="shedule-link">
+                                                                <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                            </div>
+                                                        </dv>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-box pt-3">
+                                                    <div class="row">
+                                                        <div class="col-sm-2 col-12 schedule-timming">
+                                                            <div class="scheduletime">
+                                                                8:30pm
+                                                            </div>
+                                                            <div class="schedulemins">
+                                                                45min
+                                                            </div>
+                                                        </div>
+                                                        <dv class="col-sm-10 col-12 schedule-timming ">
+                                                            <div class="schedule-title">Re-Innovation of Applications</div>
+                                                            <div class="shedule-link">
+                                                                <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                            </div>
+                                                        </dv>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule-box pt-3">
+                                                    <div class="row">
+                                                        <div class="col-sm-2 col-12 schedule-timming">
+                                                            <div class="scheduletime">
+                                                                8:30pm
+                                                            </div>
+                                                            <div class="schedulemins">
+                                                                45min
+                                                            </div>
+                                                        </div>
+                                                        <dv class="col-sm-10 col-12 schedule-timming ">
+                                                            <div class="schedule-title">Re-Innovation of Applications</div>
+                                                            <div class="shedule-link">
+                                                                <a href="">https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting</a>
+                                                            </div>
+                                                        </dv>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="document-whole">
+                                            <div class="doc_logo ">
+                                                <i class="fa-solid fa-calendar pe-3"></i>
+                                                Documents
+                                            </div>
+                                            <div class="document-fliter">
+                                                <div class="new-upload">
+                                                    <div class="fliter_holdeer">
+                                                        <div class="dropdown">
+                                                            <div class="select">
+                                                                <i class="fa-solid fa-circle-plus"></i>
+                                                                <span class="selected">New</span>
+                                                                <div class="caret"></div>
+                                                            </div>
+                                                            <ul class="menu">
+                                                                <li class="active">Frame</li>
+                                                                <li>Frame</li>
+                                                                <li>Frame</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fliter_holdeer">
+                                                        <div class="dropdown">
+                                                            <div class="select">
+                                                                <i class="fa-sharp fa-solid fa-upload"></i>
+                                                                <span class="selected">Upload</span>
+                                                                <div class="caret"></div>
+                                                            </div>
+                                                            <ul class="menu">
+                                                                <li class="active">Department 1</li>
+                                                                <li>Department 1</li>
+                                                                <li>Department 2</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="fliter_holdeer all_document">
+                                                    <div class="dropdown">
+                                                        <div class="select">
+                                                            <i class="fa-sharp fa-solid fa-file"></i>
+                                                            <span class="selected">All Document</span>
+                                                            <div class="caret"></div>
+                                                        </div>
+                                                        <ul class="menu">
+                                                            <li class="active">Divis</li>
+                                                            <li>Frame</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="all-document table-resposive">
+                                                <div class="table-responsive">
+                                                    <table class="table table-borderless">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">
+                                                                    <div class="fliter_holdeer">
+                                                                        <div class="dropdown">
+                                                                            <div class="select">
+                                                                                <i class="fa-sharp fa-solid fa-file"></i>
+                                                                                <span class="selected">Name</span>
+                                                                                <div class="caret"></div>
+                                                                            </div>
+                                                                            <ul class="menu">
+                                                                                <li class="active">Department 1</li>
+                                                                                <li>Department 1</li>
+                                                                                <li>Department 2</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th scope="col">
+                                                                    <div class="fliter_holdeer">
+                                                                        <div class="dropdown">
+                                                                            <div class="select">
+                                                                                <span class="selected">Modified</span>
+                                                                                <div class="caret"></div>
+                                                                            </div>
+                                                                            <ul class="menu">
+                                                                                <li class="active">Department 1</li>
+                                                                                <li>Department 1</li>
+                                                                                <li>Department 2</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th scope="col">
+                                                                    <div class="fliter_holdeer">
+                                                                        <div class="dropdown">
+                                                                            <div class="select">
+                                                                                <span class="selected">Modified By</span>
+                                                                                <div class="caret"></div>
+                                                                            </div>
+                                                                            <ul class="menu">
+                                                                                <li class="active">Department 1</li>
+                                                                                <li>Department 1</li>
+                                                                                <li>Department 2</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="project-name">
+                                                                    <img src="image/flat-color-icons_folder (2).png" class="pe-1 d-sm-inline d-none" alt="">
+                                                                    <span class="proj-name"> Current Projects</span>
+                                                                </td>
+                                                                <td class="modified-time">Yesterday at 4:06PM</td>
+                                                                <td class="modified-by">Larry Henry Uzochukwu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="project-name">
+                                                                    <img src="image/flat-color-icons_folder (2).png" class="pe-1 d-sm-inline d-none" alt="">
+                                                                    <span class="proj-name"> Current Projects</span>
+                                                                </td>
+                                                                <td class="modified-time">Yesterday at 4:06PM</td>
+                                                                <td class="modified-by">Larry Henry Uzochukwu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="project-name">
+                                                                    <img src="image/flat-color-icons_folder (2).png" class="pe-1 d-sm-inline d-none" alt="">
+                                                                    <span class="proj-name"> Current Projects</span>
+                                                                </td>
+                                                                <td class="modified-time">Yesterday at 4:06PM</td>
+                                                                <td class="modified-by">Larry Henry Uzochukwu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="project-name">
+                                                                    <img src="image/flat-color-icons_folder (2).png" class="pe-1 d-sm-inline d-none" alt="">
+                                                                    <span class="proj-name"> Current Projects</span>
+                                                                </td>
+                                                                <td class="modified-time">Yesterday at 4:06PM</td>
+                                                                <td class="modified-by">Larry Henry Uzochukwu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="project-name">
+                                                                    <img src="image/flat-color-icons_folder (2).png" class="pe-1 d-sm-inline d-none" alt="">
+                                                                    <span class="proj-name"> Current Projects</span>
+                                                                </td>
+                                                                <td class="modified-time">Yesterday at 4:06PM</td>
+                                                                <td class="modified-by">Larry Henry Uzochukwu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="project-name">
+                                                                    <img src="image/flat-color-icons_folder (2).png" class="pe-1 d-sm-inline d-none" alt="">
+                                                                    <span class="proj-name"> Current Projects</span>
+                                                                </td>
+                                                                <td class="modified-time">Yesterday at 4:06PM</td>
+                                                                <td class="modified-by">Larry Henry Uzochukwu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="project-name">
+                                                                    <img src="image/flat-color-icons_folder (2).png" class="pe-1 d-sm-inline d-none" alt="">
+                                                                    <span class="proj-name"> Current Projects</span>
+                                                                </td>
+                                                                <td class="modified-time">Yesterday at 4:06PM</td>
+                                                                <td class="modified-by">Larry Henry Uzochukwu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="project-name">
+                                                                    <img src="image/flat-color-icons_folder (2).png" class="pe-1 d-sm-inline d-none" alt="">
+                                                                    <span class="proj-name"> Current Projects</span>
+                                                                </td>
+                                                                <td class="modified-time">Yesterday at 4:06PM</td>
+                                                                <td class="modified-by">Larry Henry Uzochukwu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="project-name">
+                                                                    <img src="image/flat-color-icons_folder (2).png" class="pe-1 d-sm-inline d-none" alt="">
+                                                                    <span class="proj-name"> Current Projects</span>
+                                                                </td>
+                                                                <td class="modified-time">Yesterday at 4:06PM</td>
+                                                                <td class="modified-by">Larry Henry Uzochukwu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="project-name">
+                                                                    <img src="image/flat-color-icons_folder (2).png" class="pe-1 d-sm-inline d-none" alt="">
+                                                                    <span class="proj-name"> Current Projects</span>
+                                                                </td>
+                                                                <td class="modified-time">Yesterday at 4:06PM</td>
+                                                                <td class="modified-by">Larry Henry Uzochukwu</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 my-3">
+                                        <div class="document-whole">
+                                            <div class="doc_logo ">
+                                                <i class="fa-solid fa-calendar pe-3"></i>
+                                                Announcement
+                                            </div>
+                                            <div class="all-announcement">
+                                                <div class="announcemnet-container pt-5">
+                                                    <div class="yelllow-box"></div>
+                                                    <div class="announcement-header pt-3">
+                                                        <div class="announce-head-text">Disclaimer</div>
+                                                    </div>
+                                                    <div class="announcement-body pt-2">
+                                                        <div class="announc-body-text">
+                                                            MTN has made efforts to ensure the precision of the maps for outdoor coverage and makes no representation, warranty, or guarantee as to the accuracy, or extensiveness of any of the data provided here. This map should only be used as a guideline as coverage may be affected by various external factors and interferences beyond our control including but not limited to the weather, topography, man-made structures, etc.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="announcemnet-container pt-5">
+                                                    <div class="yelllow-box"></div>
+                                                    <div class="announcement-header pt-3">
+                                                        <div class="announce-head-text">Disclaimer</div>
+                                                    </div>
+                                                    <div class="announcement-body pt-2">
+                                                        <div class="announc-body-text">
+                                                            MTN has made efforts to ensure the precision of the maps for outdoor coverage and makes no representation, warranty, or guarantee as to the accuracy, or extensiveness of any of the data provided here. This map should only be used as a guideline as coverage may be affected by various external factors and interferences beyond our control including but not limited to the weather, topography, man-made structures, etc.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="announcemnet-container pt-5">
+                                                    <div class="yelllow-box"></div>
+                                                    <div class="announcement-header pt-3">
+                                                        <div class="announce-head-text">Disclaimer</div>
+                                                    </div>
+                                                    <div class="announcement-body pt-2">
+                                                        <div class="announc-body-text">
+                                                            MTN has made efforts to ensure the precision of the maps for outdoor coverage and makes no representation, warranty, or guarantee as to the accuracy, or extensiveness of any of the data provided here. This map should only be used as a guideline as coverage may be affected by various external factors and interferences beyond our control including but not limited to the weather, topography, man-made structures, etc.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="announcemnet-container pt-5">
+                                                    <div class="yelllow-box"></div>
+                                                    <div class="announcement-header pt-3">
+                                                        <div class="announce-head-text">Disclaimer</div>
+                                                    </div>
+                                                    <div class="announcement-body pt-2">
+                                                        <div class="announc-body-text">
+                                                            MTN has made efforts to ensure the precision of the maps for outdoor coverage and makes no representation, warranty, or guarantee as to the accuracy, or extensiveness of any of the data provided here. This map should only be used as a guideline as coverage may be affected by various external factors and interferences beyond our control including but not limited to the weather, topography, man-made structures, etc.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container-fluid">
+                <div class="footer_row row mt-5">
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5">Support</div>
+                        <div class="footer_body-text">MTN (PTY) LTD is an authorised Financial Service Provider, underwritten by Guardrisk Insurance Company. FSP license number: 44774</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5 ms-4">Support</div>
+                        <div class="footer_list">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Bob | Short dial: 8700
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        How to Upload images
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5 ms-4">Other Links</div>
+                        <div class="footer_list">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        21 days of yello care
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Business
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Y’ello Live (MTNTUBE)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Foundation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Cameroon
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Business Continunity
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Policy Attestation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Shortz
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="under_footer mt-5">
+                    <div class="footer_logo">
+                        <img src="image/New.png" alt="">
+                    </div>
+                    <div class="footer-reserverd">2022 Mobile Telephone Networks  .  All right reserved</div>
+                    <div class="footer-social">
+                        <a href="">FACEBOOK</a>
+                        <a href="">INSTAGRAM</a>
+                        <a href="">TWITTER</a>
+                        <a href="">WHATSAPP</a>
+                        <a href="">YOUTUBE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/index.js"></script>
+        <script src="js/welcom.js"></script>
+    </body>
+</html>

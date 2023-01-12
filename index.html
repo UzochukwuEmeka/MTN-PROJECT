@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/division.css">
+        <link rel="stylesheet" href="css/news.css">
+        <link rel="stylesheet" href="css/news-page.css">
+        <link rel="stylesheet" href="css/Information.css">
+        <link rel="stylesheet" href="css/Allnews.css">
+        <link rel="stylesheet" href="css/component.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/index2.css">
+    </head>
+    <body>
+        <section class="nav_bar">
+            <div class="navbar_body">
+                <div class="nav_link">
+                    <div class="container mini_nav  ">
+                        <a href="">Leaderboard</a>
+                        <a href="">Birthdays</a>
+                        <a href="">My Services</a>
+                        <a href="">MTN ToolBox</a>
+                    </div>
+                </div>
+                <div class="mobile_header">
+                    <div class="mobile_logo">
+                        <a href="" class="pt-2 pe-3 mobile_logo">
+                            <img src="image/Vector.png" alt="">
+                        </a>
+                    </div>
+                    <div class="menu_bar" id="menu_bar" onclick="myFunction()">
+                        <i class="fa-solid fa-bars "></i>
+                    </div>
+                </div>
+                <header id="header">
+                    <div class="d-flex g-4  right-nav">
+                        <a href="" class="pt-2 pe-3 logo">
+                            <img src="image/Vector.png" alt="">
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="">Y’ello coms</a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#">Workflows</a>
+                            </li>
+                            <li class="popModal">
+                                <a href="#" id="popModal">Our People</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-nav">
+                        <div class="profile-icons">
+                            <div class="note-holder">
+                                <a href="profile.html">
+                                    <img src="image/user.png" alt="">
+                                </a>
+                                <div class="notification"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="note-holder">
+                                <a href="#">
+                                    <img src="image/bell.png" alt="">
+                                </a>
+                                <div class="notification"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cancel" onclick="closeup()">
+                        <img src="image/x.png" alt="">
+                    </div>
+                </header>
+            </div>
+        </section>
+        <section class="departmental-selection">
+            <div class="departmental-selction-container ">
+                <div class="row departmental-selction-row">
+                    <div class="col-lg-3 col-12">
+                        <div class="navigation-container">
+                            <div class="navs-tabs activate" onclick="showThistabs(this,'wholeTab-1')">
+                                <div class="flex_item">  Risk and Compliance</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-2')">
+                                <div class="flex_item">       Corporate Services</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-3')">
+                                <div class="flex_item">       Customer Services</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-4')">
+                                <div class="flex_item">         Enterprise Business</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-5')">
+                                <div class="flex_item"> Finance</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-6')">
+                                <div class="flex_item">   Human Resources</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-7')">
+                                <div class="flex_item">     Technology</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-8')">
+                                <div class="flex_item">    Marketing</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="navigation-department-container  showThis" id="wholeTab-1">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-2">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 2
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-3">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-4">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-5">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-6">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-7">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 7
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-8">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 8
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="departmental-leader-profile uploaded" id="Info-tab-1">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga1.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-2">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga2.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-3">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga3.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-4">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga4.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-5">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga5.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-6">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga6.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-7">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga7.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-8">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga8.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="close">
+                <img src="image/x.png" alt="">
+            </div>
+        </section>
+        <section class="mtn-carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <div
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active internet-btn mx-3"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></div>
+                    <div
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                        class="internet-btn mx-3"
+                    ></div>
+                    <div
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                        class="internet-btn mx-3"
+                    ></div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <section class="mtn-intranet">
+                            <div class="container mtn-intranet-container paddingtopin">
+                                <div class="row mtn-intranet-row">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="mtn-intranet-mini-text">MTN Intranet</div>
+                                        <div class="mtn-intranet-text">
+                                            Welcome to
+                                            <br class="d-lg-block d-none">
+                                            MTN Cameroun
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="video-container">
+                                            <div class="row video-container-row">
+                                                <di class="col">
+                                                    <div class="feature-img">
+                                                        <div class="play-video-round fadein">
+                                                            <div class="play-video">
+                                                                <img
+                                                                    src="image/play.png"
+                                                                    alt=""
+                                                                    class="play-btn "
+                                                                    onclick="playVideo('media/vidi.mp4')"
+                                                                    id="play"
+                                                                >
+                                                            </div>
+                                                        </div>
+                                                        <div class="video-text ps-4">
+                                                            <div class="video-gallary-text my-5">Video Gallery</div>
+                                                            <div class="video-title my-5 ">Video of the month</div>
+                                                            <a href="" class="veiw-video my-5 ">See more videos</a>
+                                                        </div>
+                                                        <!-- <div class="video-player" id="myVideoPlayer">
+                                    <video controls width="100%">
+                                        <source src="video/How To Check Your Mobile Data Usage. (MTN Video).mp4"
+                                            type="" id="myVideo">
+                                    </video>
+                                    <img src="image/close-icon.png" alt="" class="close-video"
+                                        onclick="closeVideo('media/vidi.mp4')">
+                                </div> -->
+                                                    </div>
+                                                </di>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="video-player" id="myVideoPlayer">
+        <video  controls autoplay width="100%"><source src="/video/pexels-thirdman-6238403.mp4" type="" id="myVideo"></video>
+        <img src="image/close-icon.png" alt="" class="close-video" onclick="closeVideo()">
+    </div> -->
+                        </section>
+                    </div>
+                    <div class="carousel-item">
+                        <section class="mtn-intranet">
+                            <div class="container mtn-intranet-container paddingtopin">
+                                <div class="row mtn-intranet-row">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="mtn-intranet-mini-text">MTN Intranet</div>
+                                        <div class="mtn-intranet-text">
+                                            Welcome to
+                                            <br class="d-lg-block d-none">
+                                            MTN Cameroun
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="video-container">
+                                            <div class="row video-container-row">
+                                                <di class="col">
+                                                    <div class="feature-img">
+                                                        <div class="play-video-round fadein">
+                                                            <div class="play-video">
+                                                                <img
+                                                                    src="image/play.png"
+                                                                    alt=""
+                                                                    class="play-btn "
+                                                                    onclick="playVideo('media/vidi.mp4')"
+                                                                    id="play"
+                                                                >
+                                                            </div>
+                                                        </div>
+                                                        <div class="video-text ps-4">
+                                                            <div class="video-gallary-text my-5">Video Gallery</div>
+                                                            <div class="video-title my-5 ">Video of the month</div>
+                                                            <a href="" class="veiw-video my-5 ">See more videos</a>
+                                                        </div>
+                                                        <!-- <div class="video-player" id="myVideoPlayer">
+                                    <video controls width="100%">
+                                        <source src="video/How To Check Your Mobile Data Usage. (MTN Video).mp4"
+                                            type="" id="myVideo">
+                                    </video>
+                                    <img src="image/close-icon.png" alt="" class="close-video"
+                                        onclick="closeVideo('media/vidi.mp4')">
+                                </div> -->
+                                                    </div>
+                                                </di>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="video-player" id="myVideoPlayer">
+        <video  controls autoplay width="100%"><source src="/video/pexels-thirdman-6238403.mp4" type="" id="myVideo"></video>
+        <img src="image/close-icon.png" alt="" class="close-video" onclick="closeVideo()">
+    </div> -->
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_quick_action" id="section_quick_action">
+            <div class="container">
+                <div class="quick_container">
+                    <div class="quick_header">
+                        <h3>Quick Actions</h3>
+                    </div>
+                    <div class="quick_body text-center">
+                        <a href="" class="quick_card">
+                            <div class="quck-image">
+                                <img src="image/Combined-Shape.png" alt="">
+                            </div>
+                            <div class="quick-action-text">Blog</div>
+                        </a>
+                        <a href="" class="quick_card">
+                            <div class="quck-image">
+                                <img src="image/Group 237.png" alt="">
+                            </div>
+                            <div class="quick-action-text">Latest news</div>
+                        </a>
+                        <a href="" class="quick_card">
+                            <div class="quck-image">
+                                <img src="image/create.png" alt="">
+                            </div>
+                            <div class="quick-action-text">Create New Task</div>
+                        </a>
+                        <a href="" class="quick_card" title="share piont">
+                            <div class="quck-image">
+                                <img src="image/Leadership.png" alt="">
+                            </div>
+                            <div class="quick-action-text">Leaderborad</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="application-task">
+            <div class="container">
+                <div class="application-task-row row">
+                    <div class="col-lg-6 col-12">
+                        <div class="application-yellow">
+                            <div class="application-yellow-header-app">
+                                <div class="app-icon">
+                                    <img src="image/default.png" alt="">
+                                </div>
+                                <div class="application-yellow-header-name-app">Applications</div>
+                            </div>
+                            <div class="application-yellow-body">
+                                <div
+                                    id="carouselExampleIndicators"
+                                    class="carousel slide"
+                                    data-bs-ride="carousel"
+                                    data-bs-hover="hover"
+                                    data-bs-keyboard="true"
+                                    data-bs-touch="true"
+                                >
+                                    <div class="carousel-indicators">
+                                        <div
+                                            data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0"
+                                            class="active "
+                                            aria-current="true"
+                                            aria-label="Slide 1"
+                                        ></div>
+                                        <div data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></div>
+                                        <div data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></div>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="application-yellow-body-gray-container">
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="application-yellow-body-gray-container">
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="application-yellow-body-gray-container">
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                                <a href="" class="main-app-holder" title="Share Point">
+                                                    <div class="application-img ">
+                                                        <img src="image/Microsoft_Office_SharePoint_(2019–present) 1.png" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="application-yellow-footer-link">
+                                vIEW aLL
+                                <img src="image/Shape.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="application-yellow task-container">
+                            <div class="application-yellow-header">
+                                <div class="application-yellow-header-name">
+                                    Task
+                                </div>
+                                <div class="application-yellow-header-name-add">
+                                    <a href="">
+                                        <span class="add-task-text"> Add Task</span>
+                                        <span>
+                                            <img src="image/addplus.png" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="add-task-body">
+                                <div
+                                    id="carouselExampleIndicators"
+                                    class="carousel slide"
+                                    data-bs-ride="carousel"
+                                    data-bs-hover="hover"
+                                    data-bs-keyboard="true"
+                                    data-bs-touch="true"
+                                >
+                                    <div class="carousel-indicators add-task-indicator">
+                                        <button
+                                            type="button"
+                                            data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0"
+                                            class="active"
+                                            aria-current="true"
+                                            aria-label="Slide 1"
+                                        ></button>
+                                        <button
+                                            type="button"
+                                            data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1"
+                                            aria-label="Slide 2"
+                                        ></button>
+                                        <button
+                                            type="button"
+                                            data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2"
+                                            aria-label="Slide 3"
+                                        ></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="add-task-body-inner">
+                                                <div class="add-task-body-inner-header mb-4">
+                                                    My Task1
+                                                </div>
+                                                <div class="add-task-body-inner-body">
+                                                    <ul>
+                                                        <li class="task-list py-4">
+                                                            <div class="add-task-circle"></div>
+                                                            <div class="added-task-title">
+                                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ducimus illo nesciunt magnam veniam ipsam excepturi omnis? Reiciendis, accusamus iste?
+                                                            </div>
+                                                        </li>
+                                                        <li class="task-list py-4">
+                                                            <div class="add-task-circle"></div>
+                                                            <div class="added-task-title">
+                                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ducimus illo nesciunt magnam veniam ipsam excepturi omnis? Reiciendis, accusamus iste?
+                                                            </div>
+                                                        </li>
+                                                        <li class="task-list py-4">
+                                                            <div class="add-task-circle"></div>
+                                                            <div class="added-task-title">
+                                                                Lorem ipsum dolor,  magnam veniam ipsam excepturi omnis? Reiciendis, accusamus iste?
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="task-date pt-4">
+                                                        <div class="calender-icon">
+                                                            <img src="image/calenders.png" alt="">
+                                                        </div>
+                                                        <div class="calenders-date">12-01-23</div>
+                                                        <div class="calenders-time">12:00PM</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="add-task-body-inner">
+                                                <div class="add-task-body-inner-header mb-4">
+                                                    My Task1
+                                                </div>
+                                                <div class="add-task-body-inner-body">
+                                                    <ul>
+                                                        <li class="task-list py-4">
+                                                            <div class="add-task-circle"></div>
+                                                            <div class="added-task-title">
+                                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ducimus illo nesciunt magnam veniam ipsam excepturi omnis? Reiciendis, accusamus iste?
+                                                            </div>
+                                                        </li>
+                                                        <li class="task-list py-4">
+                                                            <div class="add-task-circle"></div>
+                                                            <div class="added-task-title">
+                                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ducimus illo nesciunt magnam veniam ipsam excepturi omnis? Reiciendis, accusamus iste?
+                                                            </div>
+                                                        </li>
+                                                        <li class="task-list py-4">
+                                                            <div class="add-task-circle"></div>
+                                                            <div class="added-task-title">
+                                                                Lorem ipsum dolor,  magnam veniam ipsam excepturi omnis? Reiciendis, accusamus iste?
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="task-date pt-4">
+                                                        <div class="calender-icon">
+                                                            <img src="image/calenders.png" alt="">
+                                                        </div>
+                                                        <div class="calenders-date">12-01-23</div>
+                                                        <div class="calenders-time">12:00PM</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="add-task-body-inner">
+                                                <div class="add-task-body-inner-header mb-4">
+                                                    My Task1
+                                                </div>
+                                                <div class="add-task-body-inner-body">
+                                                    <ul>
+                                                        <li class="task-list py-4">
+                                                            <div class="add-task-circle"></div>
+                                                            <div class="added-task-title">
+                                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ducimus illo nesciunt magnam veniam ipsam excepturi omnis? Reiciendis, accusamus iste?
+                                                            </div>
+                                                        </li>
+                                                        <li class="task-list py-4">
+                                                            <div class="add-task-circle"></div>
+                                                            <div class="added-task-title">
+                                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ducimus illo nesciunt magnam veniam ipsam excepturi omnis? Reiciendis, accusamus iste?
+                                                            </div>
+                                                        </li>
+                                                        <li class="task-list py-4">
+                                                            <div class="add-task-circle"></div>
+                                                            <div class="added-task-title">
+                                                                Lorem ipsum dolor,  magnam veniam ipsam excepturi omnis? Reiciendis, accusamus iste?
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="task-date pt-4">
+                                                        <div class="calender-icon">
+                                                            <img src="image/calenders.png" alt="">
+                                                        </div>
+                                                        <div class="calenders-date">12-01-23</div>
+                                                        <div class="calenders-time">12:00PM</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="application-yellow-footer-link add-task-link">
+                                vIEW aLL
+                                <img src="image/all.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest-news-section ">
+            <div class="container-fluid">
+                <div class="latest_news_holder">
+                    <div class="news_header">
+                        <h1> News</h1>
+                    </div>
+                    <!-- <div class="news_tabs">
+                    <div class="_tabs">
+                        <button class="_tab-links active" onclick="openAll()">All</button>
+                        <button class="_tab-links" onclick="openCity('Paris')">Press</button>
+                        <button class="_tab-links" onclick="openCity('Event')">Event</button>
+                        <button class="_tab-links" onclick="openCity('Campaigns')">Campaigns</button>
+                        <button class="_tab-links " onclick="openCity('London')">Media toolkit</button>
+                    </div>
+                </div> -->
+                    <div class="news-boxes mt-5">
+                        <div class="row news-boxes-row">
+                            <div class="col-lg-5 col-12">
+                                <div class="newsbox-1">
+                                    <div class="box-img">
+                                        <img src="image/Placeholder image_ 816 x 442.png" alt="">
+                                    </div>
+                                    <div class="  news-text">
+                                        <div class="new-text-header">
+                                            <span class="pe-2">Breadcrumb</span>
+                                            <span class="news-date">22/22/22</span>
+                                        </div>
+                                        <div class="new-text-body pt-4">
+                                            <div class="big-new-text">
+                                                Headline text, with a max of three lines with a
+                                            max of
+                                            three
+                                            lines
+                                            with more text.
+                                            </div>
+                                            <div class="news-text-paragraph  paragraph pt-4">
+                                                Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            </div>
+                                            <div class="read-more pt-5">
+                                                <a href="AllNews.html" class="read-more-link">Read More</a>
+                                                <img src="image/chevron.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-12">
+                                <div class="newsbox-2">
+                                    <div class="box2-img">
+                                        <img src="image/nmd.png" alt="">
+                                    </div>
+                                    <div class="  news-text news-text-2">
+                                        <div class="new-text-header">
+                                            <span class="pe-2">Breadcrumb</span>
+                                            <span class="news-date">22/22/22</span>
+                                        </div>
+                                        <div class="new-text-body pt-4">
+                                            <div class="big-new-text">
+                                                Headline text, with a max of three lines with a
+                                            max of
+                                            three
+                                            lines
+                                            with more text.
+                                            </div>
+                                            <div class="news-text-paragraph  paragraph pt-4">
+                                                Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            </div>
+                                            <div class="read-more pt-5">
+                                                <a href="AllNews.html" class="read-more-link">Read More</a>
+                                                <img src="image/chevron.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="newsbox-2 mt-5">
+                                    <div class="box2-img">
+                                        <img src="image/ghh.png" alt="">
+                                    </div>
+                                    <div class="  news-text news-text-2 ">
+                                        <div class="new-text-header">
+                                            <span class="pe-2">Breadcrumb</span>
+                                            <span class="news-date">22/22/22</span>
+                                        </div>
+                                        <div class="new-text-body pt-4">
+                                            <div class="big-new-text">
+                                                Headline text, with a max of three lines with a
+                                            max of
+                                            three
+                                            lines
+                                            with more text.
+                                            </div>
+                                            <div class="news-text-paragraph  paragraph pt-4">
+                                                Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            </div>
+                                            <div class="read-more pt-5">
+                                                <a href="AllNews.html" class="read-more-link">Read More</a>
+                                                <img src="image/chevron.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="department_footer mt-5">
+                <div class="search_again_btn">
+                    <a href="">VIEW ALL MEDIA</a>
+                </div>
+            </div>
+        </section>
+        <section class="picture-carousel">
+            <div class="container picture-container">
+                <div class="row picture-row">
+                    <div class="col-lg-6 col-12">
+                        <div class="card1 col-12 image_carousel mt-4">
+                            <div class="card_text-header">
+                                <img src="image/ip.png" alt="">
+                            </div>
+                            <div class="card birthday leader owl-carousel owl-theme" data-tilt>
+                                <div class="item card_item">
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/Rectangle 18 (3).png" alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Leaderboard</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Best Staff of the
+                                                month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card_item">
+                                    <div class="card-title">MTN</div>
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/Rectangle 18.png            " alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Leaderboard</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Celebrants of the
+                                                month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card_item">
+                                    <div class="card-title">MTN</div>
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/woman2.webp" alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Leaderboard</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Celebrants of the
+                                                month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 glass_bottom  leaderlinks">
+                                <a href="" class="glass-card-link">Wish them well</a>
+                                <i class="fa-light fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="card1 col-12 image_carousel mt-4">
+                            <div class="card_text-header">
+                                <img src="image/ip.png" alt="">
+                            </div>
+                            <div class="card birthday leader owl-carousel owl-theme" data-tilt>
+                                <div class="item card_item">
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/woman.webp" alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Leaderboard</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Celebrants of the
+                                                month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card_item">
+                                    <div class="card-title">MTN</div>
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/man3.jfif" alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Leaderboard</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Celebrants of the
+                                                month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card_item">
+                                    <div class="card-title">MTN</div>
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/woman2.webp" alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Leaderboard</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Celebrants of the
+                                                month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 glass_bottom  leaderlinks col-3">
+                                <a href="" class="glass-card-link">Wish them well</a>
+                                <i class="fa-light fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card1 col-12 image_carousel mt-4 ">
+                            <div class="card_text-header">
+                                <img src="image/ip.png" alt="">
+                            </div>
+                            <div class="card birthday leader owl-carousel owl-theme staff" data-tilt>
+                                <div class="item card_item">
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/woman.webp" alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Gallery</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Photos of the month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card_item">
+                                    <div class="card-title">MTN</div>
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/Rectangle 18 (2).png" alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Leaderboard</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Celebrants of the
+                                                month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card_item">
+                                    <div class="card-title">MTN</div>
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/Rectangle 18 (1).png" alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Leaderboard</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Celebrants of the
+                                                month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 glass_bottom  leaderlinks">
+                                <a href="" class="glass-card-link">Wish them well</a>
+                                <i class="fa-light fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="card1 col-12 image_carousel mt-4 ">
+                            <div class="card_text-header">
+                                <img src="image/ip.png" alt="">
+                            </div>
+                            <div class="card birthday best owl-carousel owl-theme" data-tilt>
+                                <div class="item card_item">
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/woman.webp" alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Leaderboard</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Best Staff of the
+                                                month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card_item">
+                                    <div class="card-title">MTN</div>
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/man3.jfif" alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Leaderboard</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Celebrants of the
+                                                month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card_item">
+                                    <div class="card-title">MTN</div>
+                                    <div class="item card_item">
+                                        <div class="holder">
+                                            <div class="images">
+                                                <img src="image/woman2.webp" alt="" class="man">
+                                            </div>
+                                            <div class="owllbody text-start">
+                                                <div class="owls-title " id="owls-title">Leaderboard</div>
+                                                <div class="owls-reward mt-3" id="owls-reward">
+                                                    Celebrants of the
+                                                month
+                                                </div>
+                                                <div class="owls-name mt-3" id="owls-name">John Kayeta</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 glass_bottom  leaderlinks">
+                                <a href="" class="glass-card-link">View Gallery</a>
+                                <i class="fa-light fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quick-links-section">
+            <div class="quick-links-container ">
+                <div class="quick-links-row row">
+                    <div class="col-lg-5 col-12">
+                        <div class="yammer-whole">
+                            <div class="doc_logo ">
+                                <img src="image/Vector (1).png" alt="">
+                                <span class="ps-3"> Yammer</span>
+                            </div>
+                            <div class="over-flow-container">
+                                <div class="yammer-chat-box mt-3">
+                                    <div class="yammer-chat">
+                                        <div class="chat-img">
+                                            <img src="image/ga2.png" alt="">
+                                        </div>
+                                        <div class="yammer-name">Gregory Zelfond</div>
+                                        <div class="yammer-date">-April 28, 2017 at 5:07pm</div>
+                                    </div>
+                                    <div class="yammer-reply  ">
+                                        <div class="reply-box my-4">
+                                            <div class="yammer-comment-info">
+                                                <div class="chat-img">
+                                                    <img src="image/ga1.png" alt="">
+                                                </div>
+                                                <div class="yammer-name">Gregory Zelfond</div>
+                                            </div>
+                                            <div class="yammer-commment ">
+                                                “Great job”
+                                            </div>
+                                        </div>
+                                        <div class="commenter my-2">
+                                            cc: Gregory Zelfond
+                                        </div>
+                                        <div class="comment-respond my-2">
+                                            <div class="like">
+                                                <span class="like-icon">
+                                                    <img src="image/likes.png" alt="">
+                                                </span>
+                                                <span class="like-text">Like</span>
+                                            </div>
+                                            <div class="like reply">
+                                                <span class="reply-icon">
+                                                    <img src="image/reply.png" alt="">
+                                                </span>
+                                                <span class="like-text">Reply</span>
+                                            </div>
+                                            <div class="like">
+                                                <span class="like-icon">
+                                                    <img src="image/share2.png" alt="">
+                                                </span>
+                                                <span class="like-text">Share</span>
+                                            </div>
+                                            <div class="like">
+                                                <span class="like-icon">
+                                                    <img src="image/edit.png" alt="">
+                                                </span>
+                                                <span class="like-text">Edit</span>
+                                            </div>
+                                        </div>
+                                        <div class="yammer-gray-box">
+                                            <div class="yammer-comment-info">
+                                                <div class="chat-img">
+                                                    <img src="image/ga1.png" alt="">
+                                                </div>
+                                                <div class="commenter commenter-box">
+                                                    cc: Gregory Zelfond
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="yammer-chat-box mt-4">
+                                    <div class="yammer-chat">
+                                        <div class="chat-img">
+                                            <img src="image/ga6.png" alt="">
+                                        </div>
+                                        <div class="yammer-name">Ben Teyson</div>
+                                        <div class="yammer-date">-April 28, 2017 at 5:07pm</div>
+                                    </div>
+                                    <div class="yammer-reply ">
+                                        <div class="reply-box my-4">
+                                            <div class="yammer-comment-info">
+                                                <div class="chat-img">
+                                                    <img src="image/ga4.png" alt="">
+                                                </div>
+                                                <div class="yammer-name">Gregory Zelfond</div>
+                                            </div>
+                                            <div class="yammer-commment ">
+                                                “Wow Amazing”
+                                            </div>
+                                        </div>
+                                        <div class="commenter my-2">
+                                            cc: Gregory Zelfond
+                                        </div>
+                                        <div class="comment-respond my-2">
+                                            <div class="like">
+                                                <span class="like-icon">
+                                                    <img src="image/likes.png" alt="">
+                                                </span>
+                                                <span class="like-text">Like</span>
+                                            </div>
+                                            <div class="like reply">
+                                                <span class="reply-icon">
+                                                    <img src="image/reply.png" alt="">
+                                                </span>
+                                                <span class="like-text">Reply</span>
+                                            </div>
+                                            <div class="like">
+                                                <span class="like-icon">
+                                                    <img src="image/share2.png" alt="">
+                                                </span>
+                                                <span class="like-text">Share</span>
+                                            </div>
+                                            <div class="like">
+                                                <span class="like-icon">
+                                                    <img src="image/edit.png" alt="">
+                                                </span>
+                                                <span class="like-text">Edit</span>
+                                            </div>
+                                        </div>
+                                        <div class="yammer-gray-box">
+                                            <div class="yammer-comment-info">
+                                                <div class="chat-img">
+                                                    <img src="image/ga1.png" alt="">
+                                                </div>
+                                                <div class="commenter commenter-box">
+                                                    cc: Gregory Zelfond
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="grey-container">
+                            <div class="accordion-col">
+                                <div class="accordian-mini-header">
+                                    <p>Navigation</p>
+                                </div>
+                                <div class="accordian-header">
+                                    <h2>Quick Links</h2>
+                                </div>
+                                <div class="accordian_body">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false"
+                                                    aria-controls="flush-collapseOne"
+                                                >
+                                                    <h3>Documents</h3>
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="flush-collapseOne"
+                                                class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingOne"
+                                                data-bs-parent="#accordionFlushExample"
+                                            >
+                                                <div class="accordion-body">
+                                                    Placeholder content for this accordion, which is intended to
+                                                demonstrate
+                                                the
+                                                    <code>.accordion-flush</code>
+                                                    class. This is the first item's accordion body.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false"
+                                                    aria-controls="flush-collapseTwo"
+                                                >
+                                                    <h3>Our People</h3>
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="flush-collapseTwo"
+                                                class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingTwo"
+                                                data-bs-parent="#accordionFlushExample"
+                                            >
+                                                <div class="accordion-body">
+                                                    Placeholder content for this accordion, which is intended to
+                                                demonstrate
+                                                the
+                                                    <code>.accordion-flush</code>
+                                                    class. This is the second item's accordion body. Let's imagine this
+                                                being filled with some actual content.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseThree"
+                                                    aria-expanded="false"
+                                                    aria-controls="flush-collapseThree"
+                                                >
+                                                    <h3>Blog</h3>
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="flush-collapseThree"
+                                                class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingThree"
+                                                data-bs-parent="#accordionFlushExample"
+                                            >
+                                                <div class="accordion-body">
+                                                    Placeholder content for this accordion, which is intended to
+                                                demonstrate
+                                                the
+                                                    <code>.accordion-flush</code>
+                                                    class. This is the third item's accordion body. Nothing more
+                                                exciting
+                                                happening here in terms of content, but just filling up the space to
+                                                make it look, at least at first glance, a bit more representative of
+                                                how
+                                                this would look in a real-world application.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingFour">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseFour"
+                                                    aria-expanded="false"
+                                                    aria-controls="flush-collapseThree"
+                                                >
+                                                    <h3>Gallery</h3>
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="flush-collapseFour"
+                                                class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingFour"
+                                                data-bs-parent="#accordionFlushExample"
+                                            >
+                                                <div class="accordion-body">
+                                                    Placeholder content for this accordion, which is intended to
+                                                demonstrate
+                                                the
+                                                    <code>.accordion-flush</code>
+                                                    class. This is the third item's accordion body. Nothing more
+                                                exciting
+                                                happening here in terms of content, but just filling up the space to
+                                                make it look, at least at first glance, a bit more representative of
+                                                how
+                                                this would look in a real-world application.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingFive">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseFive"
+                                                    aria-expanded="false"
+                                                    aria-controls="flush-collapseThree"
+                                                >
+                                                    <h3>Gallery</h3>
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="flush-collapseFive"
+                                                class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingFive"
+                                                data-bs-parent="#accordionFlushExample"
+                                            >
+                                                <div class="accordion-body">
+                                                    Placeholder content for this accordion, which is intended to
+                                                demonstrate
+                                                the
+                                                    <code>.accordion-flush</code>
+                                                    class. This is the third item's accordion body. Nothing more
+                                                exciting
+                                                happening here in terms of content, but just filling up the space to
+                                                make it look, at least at first glance, a bit more representative of
+                                                how
+                                                this would look in a real-world application.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container-fluid">
+                <div class="footer_row row mt-5">
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5">Support</div>
+                        <div class="footer_body-text">MTN (PTY) LTD is an authorised Financial Service Provider, underwritten by Guardrisk Insurance Company. FSP license number: 44774</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5 ms-4">Support</div>
+                        <div class="footer_list">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Bob | Short dial: 8700
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        How to Upload images
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5 ms-4">Other Links</div>
+                        <div class="footer_list">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        21 days of yello care
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Business
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Y’ello Live (MTNTUBE)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Foundation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Cameroon
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Business Continunity
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Policy Attestation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Shortz
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="under_footer mt-5">
+                    <div class="footer_logo">
+                        <img src="image/New.png" alt="">
+                    </div>
+                    <div class="footer-reserverd">2022 Mobile Telephone Networks  .  All right reserved</div>
+                    <div class="footer-social">
+                        <a href="">FACEBOOK</a>
+                        <a href="">INSTAGRAM</a>
+                        <a href="">TWITTER</a>
+                        <a href="">WHATSAPP</a>
+                        <a href="">YOUTUBE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+         
+            $('.leader').owlCarousel({
+                loop: true,
+                animateOut: 'fadeOut',
+                margin: 5,
+                nav: false,
+                autoplay: false,
+                video: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause:true
+ ,
+    
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+            $('.best').owlCarousel({
+                loop: true,
+                margin: 5,
+                animateOut: 'fadeOut',
+                nav: false,
+                autoplay: false,
+                video: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause:true,
+ 
+    
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+            $('.staff').owlCarousel({
+                loop: true,
+                animateOut: 'fadeOut',
+                margin: 5,
+                nav: false,
+                autoplay: false,
+                video: true,
+                autoplayTimeout: 8000,
+                autoplayHoverPause:true,
+ 
+    
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+         </script>
+    </body>
+</html>

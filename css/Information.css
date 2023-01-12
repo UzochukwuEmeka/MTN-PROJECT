@@ -1,0 +1,572 @@
+.search_big_text h3 {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 110%;
+    font-feature-settings: 'salt' on;
+    color: #202020;
+}
+
+.name h2 {
+    font-size: 2.8rem !important;
+}
+
+.divsion-btn a {
+    padding: 8px 20px !important;
+
+}
+
+.header_division_image img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.division_header {
+    display: flex;
+    gap: 100px !important;
+    /* justify-content: space-between !important; */
+}
+
+.add-task-column {
+    background: linear-gradient(180deg, rgba(115, 115, 115, 0.4) 0%, rgba(0, 0, 0, 0.8) 50%), #232323;
+    background-blend-mode: multiply, normal, normal;
+    border: 2px solid #383838;
+    border-radius: 24px;
+}
+
+.add-task-container {
+    padding: 20px 30px;
+
+}
+
+.profile-image{
+    width: 183px;
+    height: 183px;
+}
+
+.profile-flex-item {
+    flex-basis: 40%;
+}
+.bio_container{
+    padding-top: 30px;
+}
+.information-container{
+    padding-top: 30px;
+}
+.whole-schedules{
+    height: 318px;
+    overflow: hidden;
+}
+.add-task-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-feature-settings: 'salt' on;
+}
+
+.task-name {
+    color: #FFFFFF;
+}
+
+.glass-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.add-task {
+    color: #FCD818;
+}
+
+.add-task-body {
+    margin-top: 35px;
+}
+
+.add-task-title {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    font-feature-settings: 'salt' on;
+    color: #FFFFFF;
+}
+
+.all-task {
+    height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.all-task::-webkit-scrollbar {
+    display: none;
+}
+
+.task-component {
+    display: flex;
+    gap: 10px;
+}
+
+.circle-indicator {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #B0B0B0;
+    transition: .3s;
+}
+
+
+.added-task {
+    font-feature-settings: 'salt' on;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.added-task:hover {
+    text-decoration-line: underline;
+
+}
+
+.circle-indicator:hover {
+    border: 1px solid #FFCB05;
+}
+
+.task-date {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-feature-settings: 'salt' on;
+    color: #909090;
+
+}
+
+.active {
+    background-color: transparent !important;
+}
+
+.workflow {
+    background: #F8F8F8;
+    padding: 46px 109px;
+}
+
+.outlook {
+    Width: 100%;
+    background: url(/image/ig.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+
+
+}
+
+.outlok-container {
+    padding: 46px 109px;
+}
+
+
+.out-look-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.twitter-image {
+    position: absolute;
+    z-index: 100;
+    left: 50px;
+    padding: 10px;
+}
+
+.glass_image {
+    width: 60px !important;
+}
+
+.outlook-image {
+    position: relative;
+}
+
+.item-body {
+    background: rgba(255, 255, 255, 0.1605);
+    border: 2px solid rgba(255, 255, 255, 0.0783);
+    backdrop-filter: blur(21.7463px);
+    padding: 62px 29px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outlook_text-header {
+    text-align: left;
+    padding-bottom: 1em;
+    display: flex;
+    color: #fff;
+    gap: 8px;
+    position: absolute;
+    z-index: 10;
+    top: 12px;
+    left: 22px;
+}
+
+.outlook_text-header img {
+    width: 20px !important;
+    height: 20px;
+    /* object-fit: contain; */
+}
+
+.out-look-app {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.outlook-chat-header {
+    padding: 10px 33px;
+    background: #4249B3;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.outlook-chat-body {
+    background: #FFFFFF;
+    border: 2px solid rgba(255, 255, 255, 0.0783);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    padding: 10px 33px;
+    height: 137px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.outlook-chat-body::-webkit-scrollbar {
+    display: none;
+}
+
+.outlook-icon,
+.add-outlook,
+.outlook-date {
+    font-family: var(--font2);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #F8F8F8;
+}
+
+
+.add-outlook,
+.outlook-date {
+    font-size: 14px;
+}
+
+.chatext-container {
+    display: flex;
+    gap: 20px;
+}
+
+.chat-icon {
+    width: 31px;
+    height: 31px;
+}
+
+.desgin-chatup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chattext-head,
+.chattext-text,
+.chat-time,
+.chat-min {
+    font-feature-settings: 'salt' on;
+    font-family: 'MTN Brighter Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8rem;
+
+    color: #000000;
+}
+
+.chat-min {
+    padding-right: 20px;
+}
+
+.chattext-text,
+.chat-min {
+    font-size: 1.2rem;
+    color: #909090;
+}
+
+.colleagues-container,
+.bottom-carousel-container {
+    padding: 46px 109px;
+
+}
+
+.colleagues-row,
+.bottom-carousel-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.employee-icon {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-feature-settings: "salt" on;
+    color: #202020;
+}
+
+.gray-container {
+    padding: 18px 10px;
+    background: #F5F5F5;
+}
+
+.employee-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    gap: 20px;
+    height: 340px;
+}
+
+.employee-head-text{
+    margin-bottom: 28px;
+}
+.employee-head-text h3 {
+    font-family: 'MTN Brighter Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 100%;
+    font-feature-settings: 'salt' on;
+
+    color: #202020;
+}
+
+.employee-form {
+    background: #FFFFFF;
+    border: 2px solid #B0B0B0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    padding: 12px 10px;
+    max-width: 466px;
+    display: flex;
+    width: 100%;
+
+}
+
+.employee-form input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 1.6rem;
+    font-family: var(--font);
+}
+
+.btn_img img {
+    width: 22px;
+    height: 22px;
+}
+
+/* Yammer-chat */
+.yammer-whole {
+    background: #FFFFFF;
+    border: 2px solid #FFCB05;
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.16);
+    border-radius: 24px;
+    padding: 28px 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    height: 604px;
+    overflow: hidden;
+   max-width: 561px;
+   width: 100%;
+
+
+
+}
+
+.over-flow-container {
+    overflow: auto;
+
+}
+
+.over-flow-container::-webkit-scrollbar {
+    display: none;
+}
+
+.yammer-chat,
+.yammer-comment-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.chat-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.yammer-name {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.18px;
+    font-feature-settings: 'salt' on;
+    color: #000000;
+}
+
+.yammer-reply {
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+.reply-box {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #B0B0B0;
+
+
+
+}
+
+.yammer-date,
+.yammer-commment,
+.commenter {
+    font-family: var(--font2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: 'salt' on;
+
+    color: #000000;
+
+}
+
+.yammer-commment {
+    padding-left: 60px;
+}
+
+.comment-respond {
+    display: flex;
+    gap: 15px;
+}
+
+.like {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.like-text {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-feature-settings: 'salt' on;
+    color: #0F87B4;
+}
+.like-icon{
+    color: #0F87B4;
+    font-size: 14px;
+
+}
+
+.yammer-gray-box {
+    background: #E8E8E8;
+    padding: 8px;
+}
+
+.commenter-box {
+    background: #FFFFFF;
+    padding: 8px;
+    width: 357px;
+}
+.all-announcement{
+    height: 435px;
+}
+
+.add-task-indicator {
+  bottom: -50px !important;
+  left: -70px !important;
+
+
+}
+.add-task-link {
+    margin-top: -11px;
+   
+}
+@media (max-width: 570px) {
+    .workflow {
+
+        padding: 46px 10px;
+    }
+
+    .yammer-reply {
+        margin-left: 0px;
+    }
+
+    .reply-box {
+        margin-left: 0px;
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+
+    }
+    .search_head_text{
+        text-align: center;
+    }
+}
+@media (max-width:930px){
+    .leaderlinks{
+        width: auto !important;
+        margin-left: 0 !important;
+    }
+    .owls-reward {
+        font-size: 2rem !important;
+      }
+}
+@media (max-width:760px){
+    .yammer-whole{
+        margin-top:20px;
+    }
+}

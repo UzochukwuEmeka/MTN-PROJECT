@@ -1,0 +1,78 @@
+.sort_by {
+  background-color: transparent;
+}
+.pagniation ul {
+  list-style: none;
+  display: flex;
+  background-color: white;
+  padding: 8px;
+  justify-content: space-around;
+}
+.pagniation ul li {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  border: 1px solid #909090;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+}
+.pagniation ul li.numb {
+  padding: 10px 50px;
+  text-align: center;
+}
+.pagniation ul li.btns{
+  border: none;
+
+}
+
+.pagniation ul li.btns .chev-btn {
+  background: #b0b0b0;
+  padding: 7px;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  border-radius: 50% !important;
+  color: #ffff;
+}
+.pagniation ul li.btns .chev-btn:hover{
+  background: #000000;
+
+}
+
+.pagniation ul li.numb.active,
+.pagniation ul li.numb:hover,.pagniation ul li.btns span:hover
+{
+  background-color: #ffcb05 !important;
+  color: #ffff;
+  border: none;
+}
+.bio-row{
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+.bio_division_header{
+  align-items: center;
+  gap: 120px;
+}
+.bio-head_name .name h2{
+  font-size: 3rem;
+}
+.profile-flex-item{
+  flex-basis: 46%;
+}
+@media(max-width:900px){
+  .pagniation ul{
+
+    gap: 10px;
+  }
+}
+@media(max-width:360px){
+  .pagniation ul li.numb {
+    padding: 10px 20px;
+    }
+}

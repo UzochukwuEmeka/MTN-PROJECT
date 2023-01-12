@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/division.css">
+        <link rel="stylesheet" href="css/news-page.css">
+        <link rel="stylesheet" href="css/Information.css">
+        <link rel="stylesheet" href="css/search_result.css">
+        <link rel="stylesheet" href="css/index2.css">
+        <link rel="stylesheet" href="css/component.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/Allnews.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+        <script src="https://kit.fontawesome.com/659d02510f.js" crossorigin="anonymous" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="nav_bar">
+            <div class="navbar_body">
+                <div class="nav_link">
+                    <div class="container mini_nav  ">
+                        <a href="">Leaderboard</a>
+                        <a href="">Birthdays</a>
+                        <a href="">My Services</a>
+                        <a href="">MTN ToolBox</a>
+                    </div>
+                </div>
+                <div class="mobile_header">
+                    <div class="mobile_logo">
+                        <a href="" class="pt-2 pe-3 mobile_logo">
+                            <img src="image/Vector.png" alt="">
+                        </a>
+                    </div>
+                    <div class="menu_bar" id="menu_bar" onclick="myFunction()">
+                        <i class="fa-solid fa-bars "></i>
+                    </div>
+                </div>
+                <header id="header">
+                    <div class="d-flex g-4  right-nav">
+                        <a href="" class="pt-2 pe-3 logo">
+                            <img src="image/Vector.png" alt="">
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="">Y’ello coms</a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#">Workflows</a>
+                            </li>
+                            <li class="popModal">
+                                <a href="#" id="popModal">Our People</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-nav">
+                        <div class="profile-icons">
+                            <div class="note-holder">
+                                <a href="profile.html">
+                                    <img src="image/user.png" alt="">
+                                </a>
+                                <div class="notification"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="note-holder">
+                                <a href="#">
+                                    <img src="image/bell.png" alt="">
+                                </a>
+                                <div class="notification"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cancel" onclick="closeup()">
+                        <img src="image/x.png" alt="">
+                    </div>
+                </header>
+            </div>
+        </section>
+        <section class="departmental-selection">
+            <div class="departmental-selction-container ">
+                <div class="row departmental-selction-row">
+                    <div class="col-lg-3 col-12">
+                        <div class="navigation-container">
+                            <div class="navs-tabs activate" onclick="showThistabs(this,'wholeTab-1')">
+                                <div class="flex_item">  Risk and Compliance</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-2')">
+                                <div class="flex_item">       Corporate Services</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-3')">
+                                <div class="flex_item">       Customer Services</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-4')">
+                                <div class="flex_item">         Enterprise Business</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-5')">
+                                <div class="flex_item"> Finance</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-6')">
+                                <div class="flex_item">   Human Resources</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-7')">
+                                <div class="flex_item">     Technology</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="navs-tabs" onclick="showThistabs(this,'wholeTab-8')">
+                                <div class="flex_item">    Marketing</div>
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="navigation-department-container  showThis" id="wholeTab-1">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-2">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 2
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-3">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-4">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-5">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-6">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-7">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 7
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-8">
+                            <div class="department-tabs activates" onclick="showInfo(this,'Info-tab-1')">
+                                Department 8
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs " onclick="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onclick="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="departmental-leader-profile uploaded" id="Info-tab-1">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga1.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-2">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga2.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-3">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga3.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-4">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga4.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-5">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga5.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-6">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga6.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-7">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga7.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-8">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga8.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="close">
+                <img src="image/x.png" alt="">
+            </div>
+        </section>
+        <section class="new-allbody">
+            <div class="container-fluid real-container paddingtop">
+                <section class="tag_section ms-5">
+                    <div class="container_tag">
+                        <div class="con tag1">
+                            <a href="index2.html" tag_link>Home</a>
+                            <i class="fa-solid fa-chevron-right ps-3"></i>
+                        </div>
+                        <div class="con tab3">
+                            <a href="#" tag_link>News</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="news-box">
+                    <div class="news-container">
+                        <div class="news-header ">
+                            <div class="news-header-text ms-5">
+                                <h1>
+                                    News
+                                </h1>
+                            </div>
+                            <section class="related-news ">
+                                <div class="news-boxes mt-5">
+                                    <div class="row news-boxes-row">
+                                        <div class="col-lg-5 col-12">
+                                            <div class="newsbox-1">
+                                                <div class="box-img">
+                                                    <img src="image/Placeholder image_ 816 x 442.png" alt="">
+                                                </div>
+                                                <div class="  news-text">
+                                                    <div class="new-text-header">
+                                                        <span class="pe-2">Breadcrumb</span>
+                                                        <span class="news-date">22/22/22</span>
+                                                    </div>
+                                                    <div class="new-text-body pt-4">
+                                                        <div class="big-new-text">
+                                                            Headline text, with a max of three lines with a
+                                                            max of
+                                                            three
+                                                            lines
+                                                            with more text.
+                                                        </div>
+                                                        <div class="news-text-paragraph  paragraph pt-4">
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                        </div>
+                                                        <div class="read-more pt-5">
+                                                            <a href="AllNews.html" class="read-more-link">Read More</a>
+                                                            <img src="image/chevron.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-12">
+                                            <div class="newsbox-2">
+                                                <div class="box2-img">
+                                                    <img src="image/nmd.png" alt="">
+                                                </div>
+                                                <div class="  news-text news-text-2">
+                                                    <div class="new-text-header">
+                                                        <span class="pe-2">Breadcrumb</span>
+                                                        <span class="news-date">22/22/22</span>
+                                                    </div>
+                                                    <div class="new-text-body pt-4">
+                                                        <div class="big-new-text">
+                                                            Headline text, with a max of three lines with a
+                                                            max of
+                                                            three
+                                                            lines
+                                                            with more text.
+                                                        </div>
+                                                        <div class="news-text-paragraph  paragraph pt-4">
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                        </div>
+                                                        <div class="read-more pt-5">
+                                                            <a href="AllNews.html" class="read-more-link">Read More</a>
+                                                            <img src="image/chevron.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="newsbox-2 mt-5">
+                                                <div class="box2-img">
+                                                    <img src="image/ghh.png" alt="">
+                                                </div>
+                                                <div class="  news-text news-text-2 ">
+                                                    <div class="new-text-header">
+                                                        <span class="pe-2">Breadcrumb</span>
+                                                        <span class="news-date">22/22/22</span>
+                                                    </div>
+                                                    <div class="new-text-body pt-4">
+                                                        <div class="big-new-text">
+                                                            Headline text, with a max of three lines with a
+                                                            max of
+                                                            three
+                                                            lines
+                                                            with more text.
+                                                        </div>
+                                                        <div class="news-text-paragraph  paragraph pt-4">
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                            Paragraph copy with a maximum of two lines.
+                                                        </div>
+                                                        <div class="read-more pt-5">
+                                                            <a href="AllNews.html" class="read-more-link">Read More</a>
+                                                            <img src="image/chevron.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container">
+                <section class="latest-news-section ">
+                    <div class="container-fluid">
+                        <div class="latest_news_holder">
+                            <div class="news_header">
+                                <h1>Latest news</h1>
+                            </div>
+                            <div class="news_tabs">
+                                <div class="_tabs">
+                                    <button class="_tab-links active" onclick="openAll()">All</button>
+                                    <button class="_tab-links" onclick="openCity('Paris')">Press</button>
+                                    <button class="_tab-links" onclick="openCity('Event')">Event</button>
+                                    <button class="_tab-links" onclick="openCity('Campaigns')">Campaigns</button>
+                                    <button class="_tab-links " onclick="openCity('London')">Media toolkit</button>
+                                </div>
+                            </div>
+                            <div class="_tabs-body  city" id="London">
+                                <div class="_tabsContent">
+                                    <div class="news_body">
+                                        <div class=" news  ">
+                                            <div class=" news_box">
+                                                <div class="news_image">
+                                                    <img src="image/new6.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="new_info">
+                                                    <div class="info_header mb-3">
+                                                        <span class="info_head_text me-3"> News</span>
+                                                        <span class="text-muted">22/22/22</span>
+                                                    </div>
+                                                    <div class="info_body">
+                                                        News headline that can run over up to three
+                                               . News headline that can
+                                                    run over up to three lines.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" news_box">
+                                                <div class="news_image">
+                                                    <img src="image/new4.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="new_info">
+                                                    <div class="info_header mb-3">
+                                                        <span class="info_head_text me-3"> News</span>
+                                                        <span class="text-muted">22/22/22</span>
+                                                    </div>
+                                                    <div class="info_body">
+                                                        News headline that can run over up to three
+                                               . News headline that can
+                                                    run over up to three lines.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_tabs-body  city" id="Paris">
+                                <div class="_tabsContent">
+                                    <div class="news_body">
+                                        <div class=" news  ">
+                                            <div class=" news_box">
+                                                <div class="news_image">
+                                                    <img src="image/news.jpeg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="new_info">
+                                                    <div class="info_header mb-3">
+                                                        <span class="info_head_text me-3"> News</span>
+                                                        <span class="text-muted">22/22/22</span>
+                                                    </div>
+                                                    <div class="info_body">
+                                                        News headline that can run over up to three
+                                               . News headline that can
+                                                    run over up to three lines.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" news_box">
+                                                <div class="news_image">
+                                                    <img src="image/news.jpeg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="new_info">
+                                                    <div class="info_header mb-3">
+                                                        <span class="info_head_text me-3"> News</span>
+                                                        <span class="text-muted">22/22/22</span>
+                                                    </div>
+                                                    <div class="info_body">
+                                                        News headline that can run over up to three
+                                               . News headline that can
+                                                   .
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_tabs-body  city" id="Campaigns">
+                                <div class="_tabsContent">
+                                    <div class="news_body">
+                                        <div class=" news  ">
+                                            <div class=" news_box">
+                                                <div class="news_image">
+                                                    <img src="image/news.jpeg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="new_info">
+                                                    <div class="info_header mb-3">
+                                                        <span class="info_head_text me-3"> News</span>
+                                                        <span class="text-muted">22/22/22</span>
+                                                    </div>
+                                                    <div class="info_body">
+                                                        News headline that can run over up to three
+                                                    lines. News headline that can. News
+                                                    headline that can. News headline that can
+                                                   .
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" news_box">
+                                                <div class="news_image">
+                                                    <img src="image/news.jpeg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="new_info">
+                                                    <div class="info_header mb-3">
+                                                        <span class="info_head_text me-3"> News</span>
+                                                        <span class="text-muted">22/22/22</span>
+                                                    </div>
+                                                    <div class="info_body">
+                                                        News headline that can run over up to three
+                                                    lines. News headline that can. News
+                                                    headline that can. News headline that can
+                                                   .
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_tabs-body  city" id="Event">
+                                <div class="_tabsContent">
+                                    <div class="news_body">
+                                        <div class=" news  ">
+                                            <div class=" news_box">
+                                                <div class="news_image">
+                                                    <img src="image/news.jpeg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="new_info">
+                                                    <div class="info_header mb-3">
+                                                        <span class="info_head_text me-3"> News</span>
+                                                        <span class="text-muted">22/22/22</span>
+                                                    </div>
+                                                    <div class="info_body">
+                                                        News headline that can run over up to three
+                                               . News headline that can
+                                                    run over up to three lines.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" news_box">
+                                                <div class="news_image">
+                                                    <img src="image/news.jpeg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="new_info">
+                                                    <div class="info_header mb-3">
+                                                        <span class="info_head_text me-3"> News</span>
+                                                        <span class="text-muted">22/22/22</span>
+                                                    </div>
+                                                    <div class="info_body">
+                                                        News headline that can run over up to three
+                                               . News headline that can
+                                                    run over up to three lines.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="social-feed">
+                <div class=" social-feed-container">
+                    <div class="dark-background">
+                        <div class="social-feed-header">
+                            Social feed
+                        </div>
+                        <div class="social-feed-text">The latest posts from our Twitter feed</div>
+                    </div>
+                    <div class="twitter-feed">
+                        <div class="twitter-feed-card container ">
+                            <div class="twitter-carousel-card row owl-carousel owl-theme ">
+                                <div class="twitter-card col-lg-10 col-12 ">
+                                    <div class="twitter-header mb-4">
+                                        <div class="twitter-img">
+                                            <img src="image/ga5.png" alt="">
+                                        </div>
+                                        <div class="twitter-address">
+                                            <div class="follow">@jane_syrus</div>
+                                            <div class="twitter-location text-muted">Twitter</div>
+                                        </div>
+                                    </div>
+                                    <div class="twitter-body my-5">
+                                        <p>
+                                            “The National Social Security Fund (NSSF) is now the second-largest
+                                        shareholder in MTN Uganda, results from the MTN Initial Public Offering
+                                        (IPO) shows..”
+                                        </p>
+                                    </div>
+                                    <div class="twitter-footer">
+                                        <a href="">
+                                            View
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="twitter-card col-lg-10 col-12 ">
+                                    <div class="twitter-header mb-4">
+                                        <div class="twitter-img">
+                                            <img src="image/ga3.png" alt="">
+                                        </div>
+                                        <div class="twitter-address">
+                                            <div class="follow">@jane_syrus</div>
+                                            <div class="twitter-location text-muted">Twitter</div>
+                                        </div>
+                                    </div>
+                                    <div class="twitter-body my-5">
+                                        <p>
+                                            “The National Social Security Fund (NSSF) is now the second-largest
+                                        shareholder in MTN Uganda, results from the MTN Initial Public Offering
+                                        (IPO) shows..”
+                                        </p>
+                                    </div>
+                                    <div class="twitter-footer">
+                                        <a href="">
+                                            View
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="twitter-card col-lg-10 col-12 ">
+                                    <div class="twitter-header mb-4">
+                                        <div class="twitter-img">
+                                            <img src="image/ga2.png" alt="">
+                                        </div>
+                                        <div class="twitter-address">
+                                            <div class="follow">@jane_syrus</div>
+                                            <div class="twitter-location text-muted">Twitter</div>
+                                        </div>
+                                    </div>
+                                    <div class="twitter-body my-5">
+                                        <p>
+                                            “The National Social Security Fund (NSSF) is now the second-largest
+                                        shareholder in MTN Uganda, results from the MTN Initial Public Offering
+                                        (IPO) shows..”
+                                        </p>
+                                    </div>
+                                    <div class="twitter-footer">
+                                        <a href="">
+                                            View
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="twitter-card col-lg-10 col-12 ">
+                                    <div class="twitter-header mb-4">
+                                        <div class="twitter-img">
+                                            <img src="image/man3.jfif" alt="">
+                                        </div>
+                                        <div class="twitter-address">
+                                            <div class="follow">@jane_syrus</div>
+                                            <div class="twitter-location text-muted">Twitter</div>
+                                        </div>
+                                    </div>
+                                    <div class="twitter-body my-5">
+                                        <p>
+                                            “The National Social Security Fund (NSSF) is now the second-largest
+                                        shareholder in MTN Uganda, results from the MTN Initial Public Offering
+                                        (IPO) shows..”
+                                        </p>
+                                    </div>
+                                    <div class="twitter-footer">
+                                        <a href="">
+                                            View
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="twitter-card col-lg-10 col-12">
+                                    <div class="twitter-header mb-4">
+                                        <div class="twitter-img">
+                                            <img src="image/man3.jfif" alt="">
+                                        </div>
+                                        <div class="twitter-address">
+                                            <div class="follow">@jane_syrus</div>
+                                            <div class="twitter-location text-muted">Twitter</div>
+                                        </div>
+                                    </div>
+                                    <div class="twitter-body my-5">
+                                        <p>
+                                            “The National Social Security Fund (NSSF) is now the second-largest
+                                        shareholder in MTN Uganda, results from the MTN Initial Public Offering
+                                        (IPO) shows..”
+                                        </p>
+                                    </div>
+                                    <div class="twitter-footer">
+                                        <a href="">
+                                            View
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="twitter-card col-lg-10 col-12">
+                                    <div class="twitter-header mb-4">
+                                        <div class="twitter-img">
+                                            <img src="image/ga1.png" alt="">
+                                        </div>
+                                        <div class="twitter-address">
+                                            <div class="follow">@jane_syrus</div>
+                                            <div class="twitter-location text-muted">Twitter</div>
+                                        </div>
+                                    </div>
+                                    <div class="twitter-body my-5">
+                                        <p>
+                                            “The National Social Security Fund (NSSF) is now the second-largest
+                                        shareholder in MTN Uganda, results from the MTN Initial Public Offering
+                                        (IPO) shows..”
+                                        </p>
+                                    </div>
+                                    <div class="twitter-footer">
+                                        <a href="">
+                                            View
+                                            <i class="bi bi-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="quick-links-section">
+                <div class="quick-links-container ">
+                    <div class="quick-links-row row">
+                        <div class="col-lg-5 col-12">
+                            <div class="yammer-whole">
+                                <div class="doc_logo ">
+                                    <img src="image/Vector (1).png" alt="">
+                                    <span class="ps-3"> Yammer</span>
+                                </div>
+                                <div class="over-flow-container">
+                                    <div class="yammer-chat-box mt-3">
+                                        <div class="yammer-chat">
+                                            <div class="chat-img">
+                                                <img src="image/ga2.png" alt="">
+                                            </div>
+                                            <div class="yammer-name">Gregory Zelfond</div>
+                                            <div class="yammer-date">-April 28, 2017 at 5:07pm</div>
+                                        </div>
+                                        <div class="yammer-reply  ">
+                                            <div class="reply-box my-4">
+                                                <div class="yammer-comment-info">
+                                                    <div class="chat-img">
+                                                        <img src="image/ga1.png" alt="">
+                                                    </div>
+                                                    <div class="yammer-name">Gregory Zelfond</div>
+                                                </div>
+                                                <div class="yammer-commment ">
+                                                    “Great job”
+                                                </div>
+                                            </div>
+                                            <div class="commenter my-2">
+                                                cc: Gregory Zelfond
+                                            </div>
+                                            <div class="comment-respond my-2">
+                                                <div class="like">
+                                                    <span class="like-icon">
+                                                        <img src="image/likes.png" alt="">
+                                                    </span>
+                                                    <span class="like-text">Like</span>
+                                                </div>
+                                                <div class="like reply">
+                                                    <span class="reply-icon">
+                                                        <img src="image/reply.png" alt="">
+                                                    </span>
+                                                    <span class="like-text">Reply</span>
+                                                </div>
+                                                <div class="like">
+                                                    <span class="like-icon">
+                                                        <img src="image/share2.png" alt="">
+                                                    </span>
+                                                    <span class="like-text">Share</span>
+                                                </div>
+                                                <div class="like">
+                                                    <span class="like-icon">
+                                                        <img src="image/edit.png" alt="">
+                                                    </span>
+                                                    <span class="like-text">Edit</span>
+                                                </div>
+                                            </div>
+                                            <div class="yammer-gray-box">
+                                                <div class="yammer-comment-info">
+                                                    <div class="chat-img">
+                                                        <img src="image/ga1.png" alt="">
+                                                    </div>
+                                                    <div class="commenter commenter-box">
+                                                        cc: Gregory Zelfond
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="yammer-chat-box mt-4">
+                                        <div class="yammer-chat">
+                                            <div class="chat-img">
+                                                <img src="image/ga6.png" alt="">
+                                            </div>
+                                            <div class="yammer-name">Ben Teyson</div>
+                                            <div class="yammer-date">-April 28, 2017 at 5:07pm</div>
+                                        </div>
+                                        <div class="yammer-reply ">
+                                            <div class="reply-box my-4">
+                                                <div class="yammer-comment-info">
+                                                    <div class="chat-img">
+                                                        <img src="image/ga4.png" alt="">
+                                                    </div>
+                                                    <div class="yammer-name">Gregory Zelfond</div>
+                                                </div>
+                                                <div class="yammer-commment ">
+                                                    “Wow Amazing”
+                                                </div>
+                                            </div>
+                                            <div class="commenter my-2">
+                                                cc: Gregory Zelfond
+                                            </div>
+                                            <div class="comment-respond my-2">
+                                                <div class="like">
+                                                    <span class="like-icon">
+                                                        <img src="image/likes.png" alt="">
+                                                    </span>
+                                                    <span class="like-text">Like</span>
+                                                </div>
+                                                <div class="like reply">
+                                                    <span class="reply-icon">
+                                                        <img src="image/reply.png" alt="">
+                                                    </span>
+                                                    <span class="like-text">Reply</span>
+                                                </div>
+                                                <div class="like">
+                                                    <span class="like-icon">
+                                                        <img src="image/share2.png" alt="">
+                                                    </span>
+                                                    <span class="like-text">Share</span>
+                                                </div>
+                                                <div class="like">
+                                                    <span class="like-icon">
+                                                        <img src="image/edit.png" alt="">
+                                                    </span>
+                                                    <span class="like-text">Edit</span>
+                                                </div>
+                                            </div>
+                                            <div class="yammer-gray-box">
+                                                <div class="yammer-comment-info">
+                                                    <div class="chat-img">
+                                                        <img src="image/ga1.png" alt="">
+                                                    </div>
+                                                    <div class="commenter commenter-box">
+                                                        cc: Gregory Zelfond
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-12">
+                            <div class="grey-container">
+                                <div class="accordion-col">
+                                    <div class="accordian-mini-header">
+                                        <p>Navigation</p>
+                                    </div>
+                                    <div class="accordian-header">
+                                        <h2>Quick Links</h2>
+                                    </div>
+                                    <div class="accordian_body">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne">
+                                                    <button
+                                                        class="accordion-button collapsed"
+                                                        type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne"
+                                                        aria-expanded="false"
+                                                        aria-controls="flush-collapseOne"
+                                                    >
+                                                        <h3>Documents</h3>
+                                                    </button>
+                                                </h2>
+                                                <div
+                                                    id="flush-collapseOne"
+                                                    class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne"
+                                                    data-bs-parent="#accordionFlushExample"
+                                                >
+                                                    <div class="accordion-body">
+                                                        Placeholder content for this accordion, which is intended to
+                                                    demonstrate
+                                                    the
+                                                        <code>.accordion-flush</code>
+                                                        class. This is the first item's accordion body.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingTwo">
+                                                    <button
+                                                        class="accordion-button collapsed"
+                                                        type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseTwo"
+                                                        aria-expanded="false"
+                                                        aria-controls="flush-collapseTwo"
+                                                    >
+                                                        <h3>Our People</h3>
+                                                    </button>
+                                                </h2>
+                                                <div
+                                                    id="flush-collapseTwo"
+                                                    class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingTwo"
+                                                    data-bs-parent="#accordionFlushExample"
+                                                >
+                                                    <div class="accordion-body">
+                                                        Placeholder content for this accordion, which is intended to
+                                                    demonstrate
+                                                    the
+                                                        <code>.accordion-flush</code>
+                                                        class. This is the second item's accordion body. Let's imagine this
+                                                    being filled with some actual content.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingThree">
+                                                    <button
+                                                        class="accordion-button collapsed"
+                                                        type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseThree"
+                                                        aria-expanded="false"
+                                                        aria-controls="flush-collapseThree"
+                                                    >
+                                                        <h3>Blog</h3>
+                                                    </button>
+                                                </h2>
+                                                <div
+                                                    id="flush-collapseThree"
+                                                    class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingThree"
+                                                    data-bs-parent="#accordionFlushExample"
+                                                >
+                                                    <div class="accordion-body">
+                                                        Placeholder content for this accordion, which is intended to
+                                                    demonstrate
+                                                    the
+                                                        <code>.accordion-flush</code>
+                                                        class. This is the third item's accordion body. Nothing more
+                                                    exciting
+                                                    happening here in terms of content, but just filling up the space to
+                                                    make it look, at least at first glance, a bit more representative of
+                                                    how
+                                                    this would look in a real-world application.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingFour">
+                                                    <button
+                                                        class="accordion-button collapsed"
+                                                        type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseFour"
+                                                        aria-expanded="false"
+                                                        aria-controls="flush-collapseThree"
+                                                    >
+                                                        <h3>Gallery</h3>
+                                                    </button>
+                                                </h2>
+                                                <div
+                                                    id="flush-collapseFour"
+                                                    class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingFour"
+                                                    data-bs-parent="#accordionFlushExample"
+                                                >
+                                                    <div class="accordion-body">
+                                                        Placeholder content for this accordion, which is intended to
+                                                    demonstrate
+                                                    the
+                                                        <code>.accordion-flush</code>
+                                                        class. This is the third item's accordion body. Nothing more
+                                                    exciting
+                                                    happening here in terms of content, but just filling up the space to
+                                                    make it look, at least at first glance, a bit more representative of
+                                                    how
+                                                    this would look in a real-world application.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="footer">
+            <div class="container-fluid">
+                <div class="footer_row row mt-5">
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5">Support</div>
+                        <div class="footer_body-text">MTN (PTY) LTD is an authorised Financial Service Provider, underwritten by Guardrisk Insurance Company. FSP license number: 44774</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5 ms-4">Support</div>
+                        <div class="footer_list">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Bob | Short dial: 8700
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        How to Upload images
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5 ms-4">Other Links</div>
+                        <div class="footer_list">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        21 days of yello care
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Business
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Y’ello Live (MTNTUBE)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Foundation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Cameroon
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Business Continunity
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Policy Attestation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Shortz
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="under_footer mt-5">
+                    <div class="footer_logo">
+                        <img src="image/New.png" alt="">
+                    </div>
+                    <div class="footer-reserverd">2022 Mobile Telephone Networks  .  All right reserved</div>
+                    <div class="footer-social">
+                        <a href="">FACEBOOK</a>
+                        <a href="">INSTAGRAM</a>
+                        <a href="">TWITTER</a>
+                        <a href="">WHATSAPP</a>
+                        <a href="">YOUTUBE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+        <script src="js/welcom.js"></script>
+    </body>
+</html>

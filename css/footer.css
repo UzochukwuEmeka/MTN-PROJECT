@@ -1,0 +1,116 @@
+/* .footer {
+  
+    background: #202020;
+    border-radius: 16px 16px 0px 0px;
+    color: white;
+  }
+  .footer_head-text {
+    color: #ffcb05;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  .under_footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer_list ul li {
+    list-style: none;
+  }
+  .footer_list ul li a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 125%;
+    font-feature-settings: "salt" on;
+    color: #ffffff;
+  }
+  .footer-reserverd,
+  .footer-social {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .footer-social a {
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #ffcb05;
+    margin-left: 5px;
+  } */
+  /* division footer */
+  .footer {
+    padding: 60px 128px;
+    background: #202020;
+    border-radius: 16px 16px 0px 0px;
+    color: white;
+    margin-top: 50px;
+  }
+  
+  .footer_head-text {
+    color: #ffcb05;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  
+  .under_footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .footer_list ul li {
+    list-style: none;
+  }
+  
+  .footer_list ul li a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 125%;
+    font-feature-settings: "salt" on;
+    color: #ffffff;
+  }
+  
+  .footer-reserverd,
+  .footer-social {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+  .footer-social a {
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #ffcb05;
+    margin-left: 5px;
+  }
+  @media (max-width:680px) {
+    .footer{
+      padding: 30px 1px;
+    }
+  }
