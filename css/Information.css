@@ -412,11 +412,7 @@
     gap: 28px;
     height: 604px;
     overflow: hidden;
-   max-width: 561px;
-   width: 100%;
-
-
-
+   max-width: 100%;
 }
 
 .over-flow-container {

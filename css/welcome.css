@@ -191,6 +191,10 @@ header .current-date {
   border-radius: 24px;
   margin-top: 12px;
 }
+.document-whole{
+  max-width: 100%;
+ 
+}
 .schedules {
   height: 480px;
   overflow: auto;

@@ -599,17 +599,26 @@ html {
   display: flex;
   justify-content: center;
 
+
   width: 100%;
   display: none;
 }
+.departmental-selction-container{
+position: relative;
 
+
+}
 .departmental-selction-row {
+  width: 1325px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+
   display: flex;
   justify-content: space-between;
   background: #ffffff;
   padding: 30px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-  width: 1295px;
+}
+.divison-tab{
+  width: 20% !important;
 }
 .navigation-container {
   padding-top: 20px;
@@ -622,6 +631,7 @@ html {
   gap: 8px;
 }
 .navs-tabs {
+  text-decoration: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -636,6 +646,10 @@ html {
   /* padding: 12px 4px; */
   background: #ffff;
   cursor: pointer;
+}
+.navs-tabs:hover{
+  color: #202020;
+  
 }
 .flex_item {
   flex-basis: 85%;
@@ -664,6 +678,7 @@ html {
 }
 
 .department-tabs {
+  text-decoration: none;
   border-radius: 8px;
   width: 300px;
   display: flex;
@@ -681,6 +696,8 @@ html {
 }
 .department-tabs:hover {
   background: #e8e8e8;
+  color: #000000;
+
 }
 .department-tabs.activates {
   background: #e8e8e8;
