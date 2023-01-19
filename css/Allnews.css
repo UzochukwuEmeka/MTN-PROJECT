@@ -295,22 +295,7 @@
     left: 14px;
 }
 
-/* Quick link contanier */
-.quick-links-container{
-    padding: 50px !important;
 
-}
-.quick-links-row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 20px;
-}
-.grey-container {
-    padding: 80px 45px;
-    background: #F5F5F5;
-}
  .doc_logo {
     font-family: "Work Sans";
     font-style: normal;

@@ -165,8 +165,9 @@
 }
 
 .outlook {
+    position:   relative;
     Width: 100%;
-    background: url(/image/ig.png);
+  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,6 +179,10 @@
 
 .outlok-container {
     padding: 46px 109px;
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 
@@ -399,124 +404,7 @@
     height: 22px;
 }
 
-/* Yammer-chat */
-.yammer-whole {
-    background: #FFFFFF;
-    border: 2px solid #FFCB05;
-    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.16);
-    border-radius: 24px;
-    padding: 28px 29px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 28px;
-    height: 604px;
-    overflow: hidden;
-   max-width: 100%;
-}
 
-.over-flow-container {
-    overflow: auto;
-
-}
-
-.over-flow-container::-webkit-scrollbar {
-    display: none;
-}
-
-.yammer-chat,
-.yammer-comment-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.chat-img img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.yammer-name {
-    font-family: var(--font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: -0.18px;
-    font-feature-settings: 'salt' on;
-    color: #000000;
-}
-
-.yammer-reply {
-    margin-left: 40px;
-    margin-top: 8px;
-}
-
-.reply-box {
-    display: flex;
-    /* align-items: center; */
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #B0B0B0;
-
-
-
-}
-
-.yammer-date,
-.yammer-commment,
-.commenter {
-    font-family: var(--font2);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    font-feature-settings: 'salt' on;
-
-    color: #000000;
-
-}
-
-.yammer-commment {
-    padding-left: 60px;
-}
-
-.comment-respond {
-    display: flex;
-    gap: 15px;
-}
-
-.like {
-    display: flex;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.like-text {
-    font-family: 'Work Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-feature-settings: 'salt' on;
-    color: #0F87B4;
-}
-.like-icon{
-    color: #0F87B4;
-    font-size: 14px;
-
-}
-
-.yammer-gray-box {
-    background: #E8E8E8;
-    padding: 8px;
-}
-
-.commenter-box {
-    background: #FFFFFF;
-    padding: 8px;
-    width: 357px;
-}
 .all-announcement{
     height: 435px;
 }
@@ -530,6 +418,9 @@
 .add-task-link {
     margin-top: -11px;
    
+}
+.bio_text,.bio_name {
+    text-align: left;
 }
 @media (max-width: 570px) {
     .workflow {
@@ -560,9 +451,13 @@
     .owls-reward {
         font-size: 2rem !important;
       }
+      .outlook-image{
+        margin-top: 20px;
+    }
 }
 @media (max-width:760px){
     .yammer-whole{
         margin-top:20px;
     }
+  
 }

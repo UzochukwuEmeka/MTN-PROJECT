@@ -9,18 +9,19 @@
 .profile-img-section {
   position: relative;
 }
-.edit-pencil{
+
+.edit-pencil {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #FFCB05;
-display: flex;
-justify-content: center;
-align-items: center;
-position: absolute;
-left: 250px;
-top: 12px;
-cursor: pointer;
+  background: #ffcb05;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 250px;
+  top: 12px;
+  cursor: pointer;
 }
 .profile-image {
   width: 268px;
@@ -40,6 +41,10 @@ cursor: pointer;
   line-height: 125%;
   font-feature-settings: "salt" on;
   color: #202020;
+}
+.bio_text,
+.bio_name {
+  text-align: left;
 }
 .update-link {
   background: #202020;
@@ -85,7 +90,6 @@ cursor: pointer;
   padding: 12px 40px;
   border: 1px solid #909090;
   border-radius: 8px;
-
 }
 .interest {
   display: flex;
@@ -174,7 +178,7 @@ cursor: pointer;
   .update-profile {
     text-align: center;
   }
-  .edit-pencil{
+  .edit-pencil {
     left: 290px;
   }
 }

@@ -21,8 +21,8 @@ html {
   font-size: 62.5%;
 }
 
-.paddingtop {
-  padding-top: 100px !important;
+.bio_text, .bio_name {
+  text-align: left;
 }
 .division_header {
   display: flex !important;
@@ -129,19 +129,7 @@ html {
   /* padding-bottom: 150px; */
 }
 
-.bio_name h3,
-.deparmental_name h5,
-.bio_text p {
-  font-family: var(--font2);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.6rem;
-}
 
-.bio_text p {
-  font-size: 1.6rem;
-  font-weight: 400;
-}
 
 .department_header {
   text-align: center;
@@ -197,27 +185,6 @@ html {
   color: var(--text-color);
 }
 
-.department_footer {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.search_again_btn a,
-.search_again_btn a:hover {
-  font-family: var(--font2);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  font-feature-settings: "salt" on;
-  color: #ffffff;
-  background: #202020;
-  border-radius: 24px;
-  padding: 17px 80px;
-  text-decoration: none;
-}
 
 .details_section {
   padding-top: 50px;

@@ -308,7 +308,18 @@ width: 100%;
     transition: .3s;
     margin-left: -30px;
 }
+@media (max-width:960px) {
+    .newsbox-1{
+        flex-direction: row !important;
+    }
+}
 
+
+@media (max-width:760px) {
+    .newsbox-1{
+        flex-direction: column !important;
+    }
+}
 @media (max-width: 570px) {
     .display-new-header {
         font-size: 2rem;
@@ -337,3 +348,4 @@ width: 100%;
     }
 
 }
+

@@ -1,15 +1,3 @@
-
-// Open and Close navbar modal
-document.getElementById("popModal").addEventListener( "mouseover", function () {
-  document.querySelector(".departmental-selection").style.display="flex"
-
-})
-
-document.querySelector(".close").addEventListener("click", function () {
-  document.querySelector(".departmental-selection").style.display="none"
-  
-})
-
 // Calender
 
 const currentDate = document.querySelector(".current-date"),
@@ -84,82 +72,28 @@ preNexticon.forEach((icon) => {
   });
 });
 
-
-
-
 // For tabs in the News section
 
 function openCity(cityName) {
-    var i;
-    var x = document.getElementsByClassName("city");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    document.getElementById(cityName).style.display = "block";
-} 
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(cityName).style.display = "block";
+}
 
 function openAll() {
   var i;
   var x = document.getElementsByClassName("city");
   for (i = 0; i < x.length; i++) {
-      x[i].style.display = "block";
+    x[i].style.display = "block";
   }
 }
 
 let tablinks = document.querySelectorAll(".tab-links");
 for (let i = 0; i < tablinks.length; i++) {
-tablinks[i].addEventListener("click",function () {
-  tablinks[i].classList.toggle("active")
-  console.log("boy")
-})
-  
-}
-
-
-
-
-
-  // Open and Close navbar modal
-  document.getElementById("popModal").addEventListener( "mouseover", function () {
-    
-    document.querySelector(".departmental-selection").style.display="flex"
-  
-  })
-  
-  document.querySelector(".close").addEventListener("click", function () {
-    document.querySelector(".departmental-selection").style.display="none"
-    
-  })
-
-// Departmental Tabs
-function showThistabs(activatedtabs, contentTabs) {
-  var navtabs=document.querySelectorAll(".navs-tabs")
-  var tabContent=document.querySelectorAll(".navigation-department-container")
-  var i=0
-
-while (i < navtabs.length) {
-  navtabs[i].classList.remove("activate");
-  tabContent[i].classList.remove("showThis");
-  i++;
-      }
-    activatedtabs.classList.add('activate')
-    document.getElementById(contentTabs).classList.add('showThis')
-}
-
-
-function showInfo(activatedinfo, infocontent) {
-let departmentTab = document.querySelectorAll(".department-tabs");
-let deparmntpic = document.querySelectorAll(".departmental-leader-profile")
-let i = 0;
-while (i < departmentTab.length) {
-  departmentTab[i].classList.remove("activates");
-for (let i = 0; i < deparmntpic.length; i++) {
-
-deparmntpic[i].classList.remove("uploaded")
-  
-}
-  i++;
-}
-activatedinfo.classList.add("activates");
-document.getElementById(infocontent).classList.add("uploaded");
+  tablinks[i].addEventListener("click", function () {
+    tablinks[i].classList.toggle("active");
+  });
 }

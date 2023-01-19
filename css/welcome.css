@@ -4,6 +4,9 @@
 .bio_info_section {
   padding-top: 40px;
 }
+.calender_section{
+  padding: 20px;
+}
 .welcome_background_image_container {
   position: relative;
   width: 100%;
@@ -42,6 +45,11 @@
 .bio_container {
   padding-top: 0px;
 }
+.bio_text,
+.bio_name {
+  text-align: left;
+}
+
 .information-row {
   display: flex;
   justify-content: space-between;
@@ -135,7 +143,7 @@ header .current-date {
 }
 .calender {
   padding: 10px;
-  padding-left: 20px;
+  padding-right: 30px;
 }
 .calender::-webkit-scrollbar {
   display: none;
@@ -147,6 +155,8 @@ header .current-date {
 }
 .calender .weeks li {
   font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
 .calender .days {
   margin-bottom: 20px;
@@ -155,6 +165,8 @@ header .current-date {
   cursor: pointer;
   margin-top: 30px;
   z-index: 1;
+  display: flex !important;
+  justify-content: center;
 }
 .days li.inactive {
   color: #f8f8f8;
@@ -169,12 +181,11 @@ header .current-date {
   content: "";
   height: 30px;
   width: 30px;
-  top: 40%;
-  left: 6%;
+  top: -50%;
+  left: 50%;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   z-index: -1;
-
 }
 .calender ul.days li:hover::before,
 .calender ul.days li.actives::before {
@@ -191,9 +202,8 @@ header .current-date {
   border-radius: 24px;
   margin-top: 12px;
 }
-.document-whole{
+.document-whole {
   max-width: 100%;
- 
 }
 .schedules {
   height: 480px;
