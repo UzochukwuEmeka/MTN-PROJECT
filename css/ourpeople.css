@@ -62,3 +62,15 @@
 .quick_card {
     border: 2px solid #FFC000;
 }
+@media (max-width: 912px) {
+  
+    .departmental_photos{
+      justify-content: center;
+      gap: 38px;
+    }
+    .new-staff-image{
+      width: 327px;
+      height: 327px;
+    }
+  }
+

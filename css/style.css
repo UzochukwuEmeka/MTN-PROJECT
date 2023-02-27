@@ -1,0 +1,97 @@
+.con-calender {
+  background: #232323;
+  border-radius: 1.4rem;
+  color: #fff;
+  padding: 6px 10px 20px 10px;
+  height: 400px;
+  width: auto;
+  overflow: hidden;
+}
+
+.con-calender .con-title {
+  padding: 16px 0 0 16px;
+  justify-content: flex-start;
+  text-transform: uppercase;
+}
+
+.con-calender .con-title p {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.dycalendar-month-container .dycalendar-body table tr td:not(.dycalendar-today-date) {
+  padding: 12px;
+  cursor: pointer;
+font-size: 12px;
+  border-radius: 10% !important;
+  text-align: center;
+  
+}
+
+.dycalendar-month-container .dycalendar-body table tr td.active {
+  background: rgb(49, 49, 49);
+ 
+}
+
+.dycalendar-month-container .dycalendar-body table tr td:hover:not(.dycalendar-today-date) {
+  background: rgb(49, 49, 49);
+ 
+}
+
+.con-calender .con-title i {
+  font-size: 1.2rem;
+  margin-right: 0.4rem;
+  color: rgb(133, 133, 133);
+}
+
+.con-prev-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40px;
+}
+
+.con-prev-next span {
+  font-size: 1.4rem;
+}
+
+.dycalendar-month-container .dycalendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dycalendar-month-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: unset;
+}
+
+.dycalendar-month-container .dycalendar-span-month-year {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.dycalendar-month-container .dycalendar-today-date {
+  background: #dfaf02;
+  color: #000;
+  border-radius: 10%;
+  cursor: pointer;
+ font-size: 12px;
+  text-align: center;
+}
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn {
+  position: relative;
+}
+
+.dycalendar-month-container div {
+  margin: unset;
+}
+.dycalendar-month-container .dycalendar-body table tr td.active {
+  background: rgb(49, 49, 49) !important;
+ 
+}
+
+.dycalendar-body table{
+  width:100% !important;
+}

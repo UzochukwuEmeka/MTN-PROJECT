@@ -45,6 +45,10 @@
   color: #202020;
 }
 
+.executive-head,
+.overall-head {
+  text-decoration: none;
+}
 .executive-header h3 {
   font-family: "MTN Brighter Sans";
   font-style: normal;
@@ -85,11 +89,9 @@
   border-radius: 50% !important;
   width: 40px !important;
   height: 40px !important;
-
 }
-.tabCarousel.owl-theme .owl-nav [class*=owl-]{
-  background: #B0B0B0 !important;
-
+.tabCarousel.owl-theme .owl-nav [class*="owl-"] {
+  background: #b0b0b0 !important;
 }
 .tabCarousel .owl-nav button.owl-next:hover,
 .tabCarousel .owl-nav button.owl-prev:hover {
@@ -102,11 +104,33 @@
   top: -15px;
   left: 14px;
 }
-.unit-member{
+.unit-member {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 30px;
+}
+.pagniation ul li.numb {
+  padding: 10px 50px;
+  text-align: center;
+  list-style: none;
+}
+.pagniation ul li.numb.active,
+.pagniation ul li.numb:hover,
+.pagniation ul li.btns span:hover {
+  background-color: #ffcb05 !important;
+  color: #ffff;
+  border: none;
+}
+
+.pagniation ul li {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  border: 1px solid #909090;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 @media (max-width: 760px) {
@@ -123,10 +147,10 @@
   .executive-header h3 {
     font-size: 3rem;
   }
-  .tabCarousel .owl-nav{
+  .tabCarousel .owl-nav {
     display: none !important;
   }
-  .unit-member{
+  .unit-member {
     justify-content: center;
   }
 }
@@ -135,5 +159,4 @@
     width: 160px;
     height: 160px;
   }
-
 }

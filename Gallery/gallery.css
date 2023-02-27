@@ -1,0 +1,201 @@
+._tabs {
+  display: flex;
+  justify-content: center;
+}
+[data-tab-content] {
+  display: none;
+}
+.showTab[data-tab-content] {
+  display: block;
+}
+.pagination {
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  margin: 30px 30px 60px;
+  gap: 20px;
+}
+
+.con-video-gallery {
+  position: relative;
+}
+
+.con-video-gallery:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.departmental_photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.departmental_division_image {
+  border-radius: 24px;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  transition: border 0.2s;
+  overflow: hidden;
+}
+
+.departmental_division_image img {
+  border-radius: 24px;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.departmental_division_image img:hover {
+  border: 5px solid var(--yellow);
+}
+
+/* .pagination li {
+  display: inline-block;
+  margin: 5px;
+}
+.pagination li a {
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  color: #202020;
+}
+.current-page,
+.dots {
+  width: 30px;
+  height: 30px;
+  background: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 4px;
+}
+.previous-page,
+.next-page {
+  background-color: #ffcb05;
+  width: 40px;
+  text-align: center;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.previous-page:hover {
+  transform: translateX(-5px);
+}
+.next-page:hover {
+    transform: translateX(5px);
+  }
+  .pagination .active{
+    background-color: #ffcb05;
+  }
+  .pagination .disable{
+    background-color: #ccc;
+  } */
+.pagination {
+  text-align: center;
+  margin: 30px 30px 60px;
+  user-select: none;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 5px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+}
+
+.pagination li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 45px;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none;
+}
+.pagination li a:hover {
+  color: inherit;
+}
+
+.previous-page,
+.next-page {
+  width: 78px;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.previous-page:hover {
+  transform: translateX(-5px);
+}
+
+.next-page:hover {
+  transform: translateX(5px);
+}
+
+.current-page,
+.dots {
+  width: 30px;
+  height: 30px;
+  background: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.current-page .page-link {
+  margin-top: -8px;
+  margin-left: 1px !important;
+}
+
+.active {
+  background: #000000;
+}
+
+.disable {
+  background: #ccc;
+}
+
+.previous-page a,
+.next-page a {
+  background: transparent;
+  border: none;
+}
+.dycalendar-body table {
+  width: 100% !important;
+}
+.search-container {
+  display: flex;
+  padding: 18px;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dropdown {
+  min-width: 219px !important;
+}
+  .menu li.active{
+  background: #fff;
+}
+.our_people_header {
+  text-align: start;
+}
+.department_header h1 {
+  font-size: 6.4rem;
+}
+@media (max-width:760px) {
+  .departmental_photos{
+    justify-content: center;
+  }
+  .our_people_header {
+    text-align: start;
+    margin: 22px 2px;
+  }
+  .department_header h1 {
+    font-size: 3.4rem;
+  }
+}

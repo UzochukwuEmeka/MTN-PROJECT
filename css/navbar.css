@@ -212,6 +212,12 @@
     padding: 0 !important;
     position: relative;
   }
+  .left-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-left: 10px;
+}
 
   .mobile_logo {
     display: block;

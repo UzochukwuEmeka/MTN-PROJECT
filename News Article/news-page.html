@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+      
+       
+      
+       
+        <link rel="stylesheet" href="css/index2.css">
+        <link rel="stylesheet" href="css/component.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/news-page.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <script src="https://kit.fontawesome.com/659d02510f.js" crossorigin="anonymous" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <section class="nav_bar">
+            <div class="navbar_body">
+                <div class="nav_link">
+                    <div class="container mini_nav  ">
+                        <a href="">Leaderboard</a>
+                        <a href="">Birthdays</a>
+                        <a href="">My Services</a>
+                        <a href="">MTN ToolBox</a>
+                    </div>
+                </div>
+                <div class="mobile_header">
+                    <div class="mobile_logo">
+                        <a href="" class="pt-2 pe-3 mobile_logo">
+                            <img src="image/Vector.png" alt="">
+                        </a>
+                    </div>
+                    <div class="menu_bar" id="menu_bar" onclick="myFunction()">
+                        <i class="fa-solid fa-bars "></i>
+                    </div>
+                </div>
+                <header id="header">
+                    <div class="d-flex g-4  right-nav">
+                        <a href="" class="pt-2 pe-3 logo">
+                            <img src="image/Vector.png" alt="">
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="">Y’ello coms</a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#">Workflows</a>
+                            </li>
+                            <li class="popModal">
+                                <a href="#" id="popModal">Our People</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-nav">
+                        <div class="profile-icons">
+                            <div class="note-holder">
+                                <a href="profile.html">
+                                    <img src="image/user.png" alt="">
+                                </a>
+                                <div class="notification"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="note-holder">
+                                <a href="#">
+                                    <img src="image/bell.png" alt="">
+                                </a>
+                                <div class="notification"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cancel" onclick="closeup()">
+                        <img src="image/x.png" alt="">
+                    </div>
+                </header>
+            </div>
+        </section>
+        <section class="departmental-selection">
+            <div class="departmental-selction-container ">
+                <div class="row departmental-selction-row">
+                    <div class="col-lg-3 col-12 divison-tab">
+                        <div class="navigation-container">
+                            <a href="our-people.html" class="navs-tabs activate" onmouseover="showThistabs(this,'wholeTab-1')">
+                                <div class="flex_item">  Risk and Compliance</div>
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="navs-tabs" onmouseover="showThistabs(this,'wholeTab-2')">
+                                <div class="flex_item">       Corporate Services</div>
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="navs-tabs" onmouseover="showThistabs(this,'wholeTab-3')">
+                                <div class="flex_item">       Customer Services</div>
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="navs-tabs" onmouseover="showThistabs(this,'wholeTab-4')">
+                                <div class="flex_item"> Enterprise Business</div>
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="navs-tabs" onmouseover="showThistabs(this,'wholeTab-5')">
+                                <div class="flex_item"> Finance</div>
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="navs-tabs" onmouseover="showThistabs(this,'wholeTab-6')">
+                                <div class="flex_item">   Human Resources</div>
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="navs-tabs" onmouseover="showThistabs(this,'wholeTab-7')">
+                                <div class="flex_item">     Technology</div>
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="navs-tabs" onmouseover="showThistabs(this,'wholeTab-8')">
+                                <div class="flex_item">    Marketing</div>
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="navigation-department-container  showThis" id="wholeTab-1">
+                            <a href="info.html" class="department-tabs activates" onmouseover="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="info.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs " onmouseover="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-2">
+                            <a href="our-people.html"  class="department-tabs activates" onmouseover="showInfo(this,'Info-tab-1')">
+                                Department 2
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html"  class="department-tabs" onmouseover="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs " onmouseover="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                           
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-3">
+                            <a href="our-people.html"  class="department-tabs activates" onmouseover="showInfo(this,'Info-tab-1')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html"  class="department-tabs" onmouseover="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs " onmouseover="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                           
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-4">
+                            <a href="our-people.html" class="department-tabs activates" onmouseover="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs " onmouseover="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                           
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-5">
+                            <a href="our-people.html"  class="department-tabs activates" onmouseover="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs " onmouseover="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                           
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-6">
+                            <a href="our-people.html"  class="department-tabs activates" onmouseover="showInfo(this,'Info-tab-1')">
+                                Department 1
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html"  class="department-tabs" onmouseover="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs " onmouseover="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                           
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-7">
+                            <div class="department-tabs activates" onmouseover="showInfo(this,'Info-tab-1')">
+                                Department 7
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <div class="department-tabs" onmouseover="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </div>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs " onmouseover="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                           
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                        </div>
+                        <div class="navigation-department-container" id="wholeTab-8">
+                            <a href="our-people.html" class="department-tabs activates" onmouseover="showInfo(this,'Info-tab-1')">
+                                Department 8
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html"  class="department-tabs" onmouseover="showInfo(this,'Info-tab-2')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-3')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs " onmouseover="showInfo(this,'Info-tab-4')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                           
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-5')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-6')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                            <a href="our-people.html" class="department-tabs" onmouseover="showInfo(this,'Info-tab-7')">
+                                Department 3
+                                <img src="image/chevron.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="departmental-leader-profile uploaded" id="Info-tab-1">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga1.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-2">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga2.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-3">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga3.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-4">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga4.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-5">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga5.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-6">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga6.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-7">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga7.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="departmental-leader-profile" id="Info-tab-8">
+                            <div class="row departmental-leader-profile-row">
+                                <div class="leader-iamge col-12">
+                                    <img src="image/ga8.png" alt="">
+                                    <div class="leader-name">Michael Knight</div>
+                                    <div class="division-status">Division Head</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bio-header mt-5">Bio</div>
+                                    <div class="bio-text mt-3">
+                                        Ralph Mupita is the Group President and CEO of MTN Group, a position he has held since the 1st September 2020, having recently served ...
+                                    </div>
+                                </div>
+                                <div class="see-all">
+                                    <a href="">See More</a>
+                                    <img src="image/chevron.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close">
+                    <img src="image/x.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="news-page-all-body">
+            <div class="container paddingtop">
+                <section class="tag_section">
+                    <div class="container_tag">
+                        <div class="con tag1">
+                            <a href="" tag_link>About</a>
+                            <i class="fa-solid fa-chevron-right ps-3"></i>
+                        </div>
+                        <div class="con tag2">
+                            <a href="Allnews.html" tag_link>News</a>
+                            <i class="fa-solid fa-chevron-right ps-3"></i>
+                        </div>
+                        <div class="con tab3">
+                            <a href="" tag_link> details</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="display-news pt-5">
+                    <div class="display-new-header col-sm-6 col-12">MTN Cameroon lauches a new Intranet interface</div>
+                    <div class="share-news mt-5 ">
+                        <div class="row share-news-row">
+                            <div class="share-news-date col-1">
+                                <div class="date"><span id="date-day">15</span> / <span id="date-month">11</span> / <span id="date-year"> 21</span></div>
+                            </div>
+                            <div class="col-sm-8 col-12  share-text-col">
+                                <div class="share-text">
+                                    Lorem ipsum dolor sit amet consectetur. Felis quis eros ullamcorper sollicitudin
+                                vehicula
+                                aliquam. Volutpat adipiscing ipsum et duis. Nulla in aliquam augue faucibus fermentum ac
+                                tincidunt. Ut in accumsan commodo aliquet.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="share-icon">
+                            <div class="yellow-circle">
+                                <img src="image/share.png" alt="">
+                            </div>
+                            <div class="share-via">
+                                <a href="">Share via
+                                    <span class="underlne">Email</span>
+                                    <img src="image/yellow-email.svg" alt="" class="img-fluid message-image ps-2">
+                                </a>
+                                <a href="">Share via  <span class="underlne">Twitter</span>
+                                    <img src="image/yellow-twitter.svg" alt="" class="img-fluid message-image ps-2">
+                                </a>
+                                <a href="">Share via  <span class="underlne">Facebook</span>
+                                    <img src="image/yellow-facebook.svg" alt="" class="img-fluid message-image ps-2">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="new-text pt-5">
+                    <div class="text-container ">
+                        Lorem ipsum dolor sit amet consectetur. Purus nascetur velit nec urna aliquam pellentesque nunc
+                    integer fringilla. Aliquet vel in et lorem sit proin. Dolor enim porta diam pharetra porta at
+                    scelerisque amet. Viverra elementum nunc tristique ornare congue tincidunt. Mauris nunc volutpat
+                    bibendum leo nibh. Commodo ac leo tincidunt at feugiat urna tincidunt velit sapien. Faucibus
+                    praesent neque eu adipiscing turpis mollis enim enim. Malesuada vitae amet sed cursus turpis.
+                    Tincidunt sed venenatis diam bibendum. Odio dignissim curabitur volutpat tortor maecenas. Morbi diam
+                    nibh id pellentesque ac quis eu.
+                    Orci leo dignissim vel lacus scelerisque elit sapien nulla pulvinar. Adipiscing arcu ipsum duis at
+                    massa feugiat neque .
+                        <br>
+                        Non scelerisque sit parturient phasellus. Tellus vitae convallis interdum
+                    eros tristique risus. Nec condimentum at condimentum ultricies nunc. Iaculis lacus nam lacus congue
+                    placerat. Enim ac sagittis cursus morbi facilisis eget.
+                    </div>
+                    <div class="news-banner mt-5">
+                        <img src="image/newsxx.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="news-banner-text pt-4 mb-5">Lorem ipsum dolor sit amet consectetur.</div>
+                    <div class="text-container ">
+                        Lorem ipsum dolor sit amet consectetur. Purus nascetur velit nec urna aliquam pellentesque nunc
+                    integer fringilla. Aliquet vel in et lorem sit proin. Dolor enim porta diam pharetra porta at
+                    scelerisque amet. Viverra elementum nunc tristique ornare congue tincidunt. Mauris nunc volutpat
+                    bibendum leo nibh. Commodo ac leo tincidunt at feugiat urna tincidunt velit sapien. Faucibus
+                    praesent neque eu adipiscing turpis mollis enim enim. Malesuada vitae amet sed cursus turpis.
+                    Tincidunt sed venenatis diam bibendum. Odio dignissim curabitur volutpat tortor maecenas. Morbi diam
+                    nibh id pellentesque ac quis eu.
+                    Orci leo dignissim vel lacus scelerisque elit sapien nulla pulvinar. Adipiscing arcu ipsum duis at
+                    massa feugiat neque .
+                        <br>
+                        Non scelerisque sit parturient phasellus. Tellus vitae convallis interdum
+                    eros tristique risus. Nec condimentum at condimentum ultricies nunc. Iaculis lacus nam lacus congue
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit molestiae dolor nisi tempora
+                    molestias pariatur! Ea excepturi distinctio deleniti, repudiandae earum nobis tempora odit quod quo
+                    unde sint explicabo saepe est quasi ratione asperiores rem sequi! Minus, debitis! Doloremque eos
+                    architecto at minus recusandae culpa atque cumque, sit omnis perspiciatis!
+                    placerat. Enim ac sagittis cursus morbi facilisis eget. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Modi impedit eum voluptatum pariatur quae quo eos tempore provident exercitationem
+                    libero fugit repellendus suscipit repudiandae quasi placeat quidem autem, unde cupiditate labore sit
+                    nam culpa praesentium porro explicabo? Minus optio ex quia quisquam. Laboriosam earum suscipit
+                    perferendis distinctio explicabo laudantium soluta ex, similique unde sed odit fugiat quidem nisi ea
+                    quibusdam.
+                    </div>
+                </section>
+                <section class="related-news  pt-5">
+                    <div class="related-news-header">
+                        Related news
+                    </div>
+                    <div class="news-boxes mt-5">
+                        <div class="row news-boxes-row">
+                            <div class="col-lg-5 col-12">
+                                <div class="newsbox-1">
+                                    <div class="box-img">
+                                        <img src="image/Placeholder image_ 816 x 442.png" alt="">
+                                    </div>
+                                    <div class="  news-text">
+                                        <div class="new-text-header">
+                                            <span class="pe-2">Breadcrumb</span>
+                                            <span class="news-date">22/22/22</span>
+                                        </div>
+                                        <div class="new-text-body pt-4">
+                                            <div class="big-new-text">
+                                                Headline text, with a max of three lines with a
+                                            max of
+                                            three
+                                            lines
+                                            with more text.
+                                            </div>
+                                            <div class="news-text-paragraph  paragraph pt-4">
+                                                Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            </div>
+                                            <div class="read-more pt-5">
+                                                <a href="AllNews.html" class="read-more-link">Read More</a>
+                                                <img src="image/chevron.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-12">
+                                <div class="newsbox-2">
+                                    <div class="box2-img">
+                                        <img src="image/nmd.png" alt="">
+                                    </div>
+                                    <div class="  news-text news-text-2">
+                                        <div class="new-text-header">
+                                            <span class="pe-2">Breadcrumb</span>
+                                            <span class="news-date">22/22/22</span>
+                                        </div>
+                                        <div class="new-text-body pt-4">
+                                            <div class="big-new-text">
+                                                Headline text, with a max of three lines with a
+                                            max of
+                                            three
+                                            lines
+                                            with more text.
+                                            </div>
+                                            <div class="news-text-paragraph  paragraph pt-4">
+                                                Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            </div>
+                                            <div class="read-more pt-5">
+                                                <a href="AllNews.html" class="read-more-link">Read More</a>
+                                                <img src="image/chevron.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="newsbox-2 mt-5">
+                                    <div class="box2-img">
+                                        <img src="image/ghh.png" alt="">
+                                    </div>
+                                    <div class="  news-text news-text-2 ">
+                                        <div class="new-text-header">
+                                            <span class="pe-2">Breadcrumb</span>
+                                            <span class="news-date">22/22/22</span>
+                                        </div>
+                                        <div class="new-text-body pt-4">
+                                            <div class="big-new-text">
+                                                Headline text, with a max of three lines with a
+                                            max of
+                                            three
+                                            lines
+                                            with more text.
+                                            </div>
+                                            <div class="news-text-paragraph  paragraph pt-4">
+                                                Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            Paragraph copy with a maximum of two lines.
+                                            </div>
+                                            <div class="read-more pt-5">
+                                                <a href="AllNews.html" class="read-more-link">Read More</a>
+                                                <img src="image/chevron.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="department_footer mt-5">
+                        <div class="search_again_btn">
+                            <a href="">VIEW ALL MEDIA</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container-fluid">
+                <div class="footer_row row mt-5">
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5">Support</div>
+                        <div class="footer_body-text">MTN (PTY) LTD is an authorised Financial Service Provider, underwritten by Guardrisk Insurance Company. FSP license number: 44774</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5 ms-4">Support</div>
+                        <div class="footer_list">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Bob | Short dial: 8700
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        How to Upload images
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer_head-text mb-5 ms-4">Other Links</div>
+                        <div class="footer_list">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        21 days of yello care
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Business
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Y’ello Live (MTNTUBE)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Foundation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Cameroon
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Business Continunity
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Policy Attestation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        MTN Shortz
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="under_footer mt-5">
+                    <div class="footer_logo">
+                        <img src="image/New.png" alt="">
+                    </div>
+                    <div class="footer-reserverd">2022 Mobile Telephone Networks  .  All right reserved</div>
+                    <div class="footer-social">
+                        <a href="">FACEBOOK</a>
+                        <a href="">INSTAGRAM</a>
+                        <a href="">TWITTER</a>
+                        <a href="">WHATSAPP</a>
+                        <a href="">YOUTUBE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="index.js"></script>
+        <script src="js/welcom.js"></script>
+    </body>
+</html>

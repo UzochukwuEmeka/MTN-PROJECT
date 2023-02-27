@@ -31,6 +31,7 @@ $('.twitter-carousel-card').owlCarousel({
     margin: 15,
     nav: true,
     autoplay: true,
+    lazyLoad:true,
     responsive: {
         0: {
             items: 1
@@ -49,7 +50,9 @@ $('.twitter-carousel-card').owlCarousel({
             items: 3
         }
     }
+    
 })
+
 
 $('.leader').owlCarousel({
     loop: true,
@@ -244,7 +247,7 @@ $('#slider').owlCarousel({
         }
     }
 })
-// Organogram css
+// Organogram js
 $('.tabCarousel').owlCarousel({
     loop:true,
     nav:true,

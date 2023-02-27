@@ -9,6 +9,10 @@
 .profile-img-section {
   position: relative;
 }
+.table_body {
+  padding: 10px 24px;
+  background: #f5f5f5;
+}
 
 .edit-pencil {
   width: 48px;
@@ -19,14 +23,15 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 250px;
-  top: 12px;
+  left: 240px;
+  top: 24px;
   cursor: pointer;
 }
 .profile-image {
   width: 268px;
   height: 268px;
   overflow: hidden;
+  border-radius: 24px;
 }
 .profile-image img {
   width: 100%;
@@ -105,7 +110,7 @@
   gap: 10px;
   cursor: pointer;
 }
-.add-image {
+.add-interest-icon {
   width: 20px;
   height: 20px;
   overflow: hidden;
@@ -169,7 +174,64 @@
   height: 2px;
   background: #1e1e1e;
 }
+.details_section {
+  padding-top: 50px;
+}
 
+.details_container {
+  max-width: 422px;
+  width: 100%;
+}
+
+.details_head {
+  padding-left: 24px;
+  padding-top: 20px;
+}
+
+.details_head h4,
+.detail_table_th {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  font-feature-settings: "salt" on;
+  color: #202020;
+}
+
+.table_body {
+  padding: 0px 24px;
+  background: #f5f5f5;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.8rem 0.5rem !important;
+}
+
+.detail_table_th {
+  font-size: 1.6rem;
+}
+
+.detail_table_td {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-feature-settings: "salt" on;
+  color: #404040;
+}
+.edit-pencil{
+  overflow: hidden;
+}
+.edit-pencil input[type='file']{
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+  cursor: pointer;
+}
+input[type='file']::-webkit-file-upload-button{
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   .image-text {
     flex-direction: column;
